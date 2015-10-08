@@ -19,6 +19,8 @@ DOCKER = docker
 APP = "resume"
 VERSION = "1.0"
 
+ANETO = aneto
+
 IMAGE_NAME="nlamirault/nlamirault"
 IMAGE_VERSION="1.0"
 
@@ -54,3 +56,4 @@ cv:
 .PHONY: deploy
 deploy:
 	@echo -e "$(OK_COLOR)[$(APP)] Deploy resume$(NO_COLOR)"
+	$(ANETO) archive put --name=$(vault) --key=resume-$(lang) --file=$(lang)/resume.pdf
