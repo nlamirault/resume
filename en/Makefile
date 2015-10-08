@@ -19,6 +19,8 @@ DOCKER=/usr/bin/docker
 PANDOC=/usr/bin/pandoc
 WKHTML=/usr/bin/wkhtmltopdf
 
+DOCKER_IMAGE=nlamirault/resume:1.0
+
 RESUME=resume
 INDEX=index
 STYLE=style.css
@@ -39,25 +41,34 @@ help:
 	@echo -e "$(WARN_COLOR)epub$(NO_COLOR)    : Make EPUB resume"
 	@echo -e "$(WARN_COLOR)clean$(NO_COLOR)   : Cleanup"
 
+.PHONY: html
 html:
+	$(PANDOC) --standalone --from markdown --to html -c $(STYLE) -o $(INDEX).html $(SOURCE).md
+
+.PHONY: pdf
+pdf:
+	$(WKHTML) -L 20mm -R 20mm $(INDEX).html $(RESUME).pdf
+
+.PHONY: d-html
+d-html:
 	$(DOCKER) run --rm=true \
 		-v `pwd`:/data/ \
-		-it --name resume nlamirault/resume \
+		-it --name resume $(DOCKER_IMAGE) \
 		$(PANDOC) --standalone --from markdown --to html -c $(STYLE) -o /data/$(INDEX).html /data/$(SOURCE).md
 
-.PHONY: build
-pdf: html
+.PHONY: d-pdf
+d-pdf: d-html
 	$(DOCKER) run --rm=true \
 		-v `pwd`:/data/ \
-		-it --name resume nlamirault/resume \
+		-it --name resume $(DOCKER_IMAGE) \
 		$(WKHTML) -L 20mm -R 20mm /data/$(INDEX).html /data/$(RESUME).pdf
 
-.PHONY: epub
-epub:
+.PHONY: d-epub
+d-epub:
 	$(DOCKER) run --rm=true \
 		-v `pwd`:/data/ \
 		-w /data/ \
-		-it --name resume nlamirault/resume \
+		-it --name resume $(DOCKER_IMAGE) \
 		$(PANDOC) /data/$(SOURCE).md -o /data/$(SOURCE).epub
 
 clean:

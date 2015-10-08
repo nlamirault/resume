@@ -51,7 +51,9 @@ docker:
 .PHONY: cv
 cv:
 	@echo -e "$(OK_COLOR)[$(APP)] Build resume$(NO_COLOR)"
-	cd ${lang} && make clean d-html d-pdf d-epub
+	cd ${lang} && make clean d-html d-pdf d-epub && \
+			cp resume.pdf ../resume-fr.pdf && \
+			cp resume.epub ../resume-fr.epub
 
 .PHONY: deploy
 deploy:
