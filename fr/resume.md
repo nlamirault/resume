@@ -126,13 +126,13 @@ Cloud
     VMware Server/ESX, Xen, KVM
 
 :   **Containeur : **
-    Docker, Kubernetes, CoreOS
+    Docker, Kubernetes, CoreOS, AtomicProject
 
 :   **Orchestrateur : **
     Cloudstack, Openstack
 
 :   **Outils : **
-    Vagrant, Packer, Puppet, Ansible, Fabric
+    Vagrant, Packer, Terraform, Ansible, Puppet, Fabric
 
 
 Langues
@@ -154,23 +154,22 @@ Cloud
 :   **bento : **
     Définition de box Vagrant utilisant Packer
 
-:   **vision : ** : Un système de monitoring et collecteur de logs basé sur Docker
+:   **vision : ** :
+    Un système de monitoring et collecteur de logs basé sur Docker
     (Docker/Elasticsearch/Kibana/Grafana/InfluxDB)
 
 :   **hyperion : **
-    Créer son propore cloud (multi-provider) basé sur Kubernetes, Ansible et Terraform
+    Configuration de votre cluster Kubernetes à l'aide Terraform et Packer
 
 :   **warhol : **
-    Une usine à image Docker supportant plusieurs hébergeurs (Github, Gitlab, ...)
+    Une usine à image Docker supportant plusieurs hébergeurs
+    (Github, Gitlab, ...)
 
 :   **Portefaix : **
-    Des images Docker basées sur Alpine Linux (Elasticsearch, Kibana, Grafana, ...)
+    Des images Docker basées sur Alpine Linux
+    (Elasticsearch, Kibana, Grafana, ...)
 
 Go
-
-:   **go-scaleway : **
-    Un client pour le cloud Scaleway
-
 :   **aneto : **
     Un outil de sauvegarde utilisant Amazon Glacier
 
@@ -178,11 +177,14 @@ Go
     Un coffre fort dans le Cloud utilisant Amazon S3 et Amazon KMS
 
 :   **abraracourcix : **
-    Un générateur d'urls raccourcies simple supportant plusieurs backend
-    de stockage (BoltDB, LevelDB, Redis, MongoDB, ...)
+    Un générateur d'urls raccourcies simple supportant plusieurs backend de stockage
+    (BoltDB, LevelDB, Redis, MongoDB, ...)
 
 :   **iris: **
     Un client cAdvisor pour monitorer les containeurs Docker
+
+:   **go-scaleway : **
+    Un client pour le cloud Scaleway
 
 :   **blinky : **
     Un outil d'affichage d'informations systèmes
@@ -212,8 +214,7 @@ Emacs
 Common Lisp
 :   **clappa : **
     An asdf-install compatible [Common Lisp Application Archive](http://boinkor.net/archives/2007/04/some_details_about_clappa.html)
-
-    Clappa a été accepté pour le Google Summer of Code 2007.
+    (Sélectionné en tant que mentor pour le Google Summer of Code 2007)
 
 :   **ernestine : **
     Un gestionnaire de musique écrit en Common Lisp utilisant McClim.
@@ -222,30 +223,24 @@ Common Lisp
     Un client de messagerie instantanée XMPP écrit en Common Lisp utilisant
     McClim.
 
-:   **cletris : **
-    Tetris écrit en Common Lisp utilisant la librairie SDL.
+:   **Cletris : **
+    Cletris, un Tetris écrit en Common Lisp utilisant la librairie SDL.
 
-:   **climon : **
-    Simon écrit en Common Lisp utilisant la librairie SDL.
-
-:   *cl-lastfm*
-
-:   *cl-geonames*
+:   **Cletris : **
+    Climon, clone de Simon, écrit en Common Lisp utilisant la librairie SDL.
 
 :   **cl-cloudStack-client : **
     Un client CloudStack en Common Lisp
 
 Utilitaires
-:   **python-freeboxclient : **
-    un CLI pour la Freebox V6
-
 :   **divona : **
     Un outil de configuration de poste Linux basé sur Ansible.
 
-
+:   **tchoupi : **
+    Web service REST implémenté dans différents languages.
 
 ------
-> <nicolas.lamirault@gmail.com> • +336 32 94 23 48 <br />
+> <nicolas.lamirault@gmail.com> • +337 84 12 76 65 <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
 > <a href="https://plus.google.com/+nicolaslamirault" alt="Google Plus"><i class="fa fa-google-plus"></i> </a>  •

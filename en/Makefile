@@ -41,16 +41,19 @@ help:
 	@echo -e "$(WARN_COLOR)epub$(NO_COLOR)    : Make EPUB resume"
 	@echo -e "$(WARN_COLOR)clean$(NO_COLOR)   : Cleanup"
 
+clean:
+	rm -rf *.pdf *.html *.epub
+
 .PHONY: html
-html:
+html: clean
 	$(PANDOC) --standalone --from markdown --to html -c $(STYLE) -o $(INDEX).html $(SOURCE).md
 
 .PHONY: pdf
-pdf:
+pdf: clean
 	$(WKHTML) -L 20mm -R 20mm $(INDEX).html $(RESUME).pdf
 
 .PHONY: d-html
-d-html:
+d-html: clean
 	$(DOCKER) run --rm=true \
 		-v `pwd`:/data/ \
 		-it --name resume $(DOCKER_IMAGE) \
@@ -64,12 +67,9 @@ d-pdf: d-html
 		$(WKHTML) -L 20mm -R 20mm /data/$(INDEX).html /data/$(RESUME).pdf
 
 .PHONY: d-epub
-d-epub:
+d-epub: clean
 	$(DOCKER) run --rm=true \
 		-v `pwd`:/data/ \
 		-w /data/ \
 		-it --name resume $(DOCKER_IMAGE) \
 		$(PANDOC) /data/$(SOURCE).md -o /data/$(SOURCE).epub
-
-clean:
-	rm -rf *.pdf *.html *.epub

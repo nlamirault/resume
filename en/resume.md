@@ -1,14 +1,6 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-title:
-- type: main
-  text: Resume
-- type: Nicolas Lamirault
-  text: Nicolas Lamirault / Resume
-creator:
-- role: author
-  text: Nicolas Lamirault
 rights: © 2014, 2015 Nicolas Lamirault
 ...
 
@@ -22,11 +14,14 @@ Expériences
 --------------
 
 07/2014-.
-:    *Infrastructure and Production Tools, Orange Apps for Business*
+:    *Infrastructure and Production Tools, Orange Apps for Business, Orange*
      Software Engineer
 
+    - Virtual machine management tools ( VMWare / CloudStack )
+    - Administration Interface for the internal Cloud
+    - Redesigned Packaging, Integration and continuous tests (Go/Docker)
 
-07 / 2012-07 / 2014
+07/2012-07/2014
 :    *Cloud computing, Multimedia Business Services, Orange*
      DevOps engineer in the Department of Cloud Computing
 
@@ -34,7 +29,6 @@ Expériences
      - Redesign of the software architecture of the IAAS (Apache CloudStack, Jersey, Flask, RabbitMQ, Python CLI, NodeJS, StatusDashboard)
      - Packaging for the orchestrator of the CloudStack cloud Multimedia Business Services
      - Setting up a development environment and build based on VirtualBox / Vagrant / Ansible
-     - Integration of Cloud Computing department.
 
 06/2011-07/2012
 :    *NFC Development, Multimedia Business Services, Orange*
@@ -87,11 +81,11 @@ Comptétences
 ---------------
 
 Languages
-:    **Master**
-     Python, Common Lisp, Java,
+:    **Current use (personal, professional)**
+     Python, Go, Common Lisp,
 
-:    **Usage**
-     Go, PHP,
+:    **Business Use only**
+     Java, PHP,
 
 :    **Knowledge**
      Erlang, Ruby, OCaml, Objective-C
@@ -101,7 +95,7 @@ OS
      Linux (Debian, Arch, Ubuntu), OSX
 
 :    **Knowledge**
-     BSD, Windows
+     BSD
 
 methodology
 :    **Organizational:**
@@ -115,10 +109,10 @@ tools
      Apache, Nginx, Tomcat
 
 :    **Database:**
-     MySQL, PostgreSQL, BerkeleyDB, NoSQL (CouchDB, MongoDB)
+     MySQL, PostgreSQL, NoSQL (CouchDB, MongoDB)
 
 :    **Development**
-     Emacs, Intellij Eclipse
+     Emacs, Intellij, Eclipse
 
 :    **Build:**
      Ant, Gradle, Maven, PIP
@@ -131,13 +125,13 @@ Cloud
      VMware Server / ESX, Xen, KVM
 
 :    **Container:**
-     Docker Kubernetes, CoreOS
+     Docker, Kubernetes, CoreOS, AtomicProject
 
 :    **Orchestrator**
      CloudStack, Openstack
 
 :    **Tools**
-     Vagrant, Packer, Puppet, Ansible, Fabric
+     Vagrant, Packer, Terraform, Ansible, Puppet, Fabric
 
 
 languages
@@ -156,18 +150,47 @@ Open source
 ----------------
 
 Cloud
-:   **eole : **
-    Environnement de développement pour OpenStack basé sur Vagrant/Ansible
-
-:   **portefaix : **
-    A cloud system based on Docker/Kubernetes
+:   **bento : **
+    Some Vagrant baseboxes
 
 :   **vision : **
-    A system monitoring and log collector
+    A system monitoring and log collector Docker based.
     (Docker/Elasticsearch/Kibana/Grafana/InfluxDB)
 
-:   **go-onlinelabs : **
-     A golang client for the Online Labs Cloud API
+:   **hyperion : **
+    Setup your own Kubernetes cluster using Terraform and Packer
+
+:   *warholl : **
+    A simple Docker image factory system
+
+:   *portefaix :**
+    Containerized app system based on Docker
+
+Go
+:   **aneto : **
+    A backup tool using Amazon Glacier
+
+:   **enigma : **
+    A safe using Amazon S3 and Amazon KMS
+
+:   **abraracourcix : **
+    A simple URL Shortener with multiple backend
+    (BoltDB, LevelDB, Redis, MongoDB, ...)
+
+:   **iris : **
+    A simple cadvisor client to monitor Docker containers.
+
+:   **guzuta : **
+    A CLI to manage personal open source contributions.
+
+:   **blinky : **
+    Display system informations and/or ASCII distributions logos.
+
+:   **go-scaleway : **
+    A golang client for the Scaleway Cloud
+
+:   **docker-machine-scaleway : **
+    Docker machine driver for Scaleway cloud provider
 
 Emacs
 :   **scame : **
@@ -211,25 +234,19 @@ Common Lisp
 :   **climon : **
     A Simon game written in Common Lisp
 
-:   *cl-lastfm*
-    A Common Lisp wrapper around Last.fm 2.0 web service
-
-:   *cl-geonames*
-
 :   **cl-cloudStack-client : **
     A common lisp client for Cloudstack
 
 Utilitaires
-:   **python-freeboxclient : **
-    A CLI for the Freebox V6 (French provider)
-
 :   **divona : **
     Setup environment configuration for Linux using Ansible
 
+:   **tchoupi : **
+    A REST webservice implemented in differents langages.
 
 
 ------
-> <nicolas.lamirault@gmail.com> • +336 32 94 23 48 <br />
+> <nicolas.lamirault@gmail.com> • +337 84 12 76 65 <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
 > <a href="https://plus.google.com/+nicolaslamirault" alt="Google Plus"><i class="fa fa-google-plus"></i> </a>  •

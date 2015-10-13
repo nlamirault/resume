@@ -40,8 +40,8 @@ help:
 clean:
 	@echo -e "$(OK_COLOR)[$(APP)] Cleanup$(NO_COLOR)"
 	find . -name "index.html" | xargs rm -fr {}
-	find . -name "resume.pdf" | xargs rm -fr {}
-	find . -name "resume.epub" | xargs rm -fr {}
+	find . -name "*.pdf" | xargs rm -fr {}
+	find . -name "*.epub" | xargs rm -fr {}
 
 .PHONY: docker
 docker:
@@ -52,10 +52,9 @@ docker:
 cv:
 	@echo -e "$(OK_COLOR)[$(APP)] Build resume$(NO_COLOR)"
 	cd ${lang} && make clean d-html d-pdf d-epub && \
-			cp resume.pdf ../resume-fr.pdf && \
-			cp resume.epub ../resume-fr.epub
+			cp resume.pdf ../resume-${lang}.pdf && \
+			cp resume.epub ../resume-${lang}.epub
 
 .PHONY: deploy
 deploy:
 	@echo -e "$(OK_COLOR)[$(APP)] Deploy resume$(NO_COLOR)"
-	$(ANETO) archive put --name=$(vault) --key=resume-$(lang) --file=$(lang)/resume.pdf
