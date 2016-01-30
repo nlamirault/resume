@@ -1,7 +1,7 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014, 2015 Nicolas Lamirault
+rights: © 2014, 2015, 2016 Nicolas Lamirault
 ...
 
 ----
@@ -125,7 +125,7 @@ Cloud
      VMware Server / ESX, Xen, KVM
 
 :    **Container:**
-     Docker, Kubernetes, CoreOS, AtomicProject
+     Docker, Kubernetes, Nomad, Openshift Origin, CoreOS, AtomicProject
 
 :    **Orchestrator**
      CloudStack, Openstack
@@ -151,20 +151,33 @@ Open source
 
 Cloud
 :   **bento : **
-    Some Vagrant baseboxes
+    Some Vagrant baseboxes made using Packer
 
 :   **vision : **
     A system monitoring and log collector Docker based.
     (Docker/Elasticsearch/Kibana/Grafana/InfluxDB)
 
-:   **hyperion : **
+:   **hyperion-k8s : **
     Setup your own Kubernetes cluster using Terraform and Packer
 
-:   *warholl : **
+:   **hyperion-swarm : **
+    Setup your own Docker Swarm cluster using Terraform and Packer
+
+:   **hyperion-nomad : **
+    Setup your own Nomad cluster using Terraform and Packer
+
+:   **hyperion-origin : **
+    Setup your own Openshift Origin using Terraform and Packer
+
+:   **hyperion-rancher : **
+    Setup your own cloud Rancher using Terraform and Packer
+
+:   **warholl : **
     A simple Docker image factory system
 
-:   *portefaix :**
-    Containerized app system based on Docker
+:   **portefaix :**
+    Containerized app system based on Docker and Alpine Linux (Elasticsearch,
+    Kibana, Grafana, InfluxDB, Vault, ...)
 
 Go
 :   **aneto : **
@@ -183,14 +196,20 @@ Go
 :   **guzuta : **
     A CLI to manage personal open source contributions.
 
+:   **geronimo : **
+    Analyse of your open source projects with Elasticsearch and Kibana
+
 :   **blinky : **
     Display system informations and/or ASCII distributions logos.
 
-:   **go-scaleway : **
-    A golang client for the Scaleway Cloud
+:   **actarus : **
+    A lightweight web browser based on the webkit web browser engine
 
-:   **docker-machine-scaleway : **
-    Docker machine driver for Scaleway cloud provider
+:   **shiva : **
+    A simple DHCP server.
+
+:   **skybox : **
+    Collecting metrics from a box provider and exporting data
 
 Emacs
 :   **scame : **
@@ -213,6 +232,9 @@ Emacs
 
 :   **emacs-gitlab : **
     An Emacs client for Gitlab
+
+:   **sift.el : **
+    A front-end for sift, a fast and powerful alternative to grep.
 
 :   **dionysos : **
     A music player for Emacs
@@ -244,9 +266,14 @@ Utilitaires
 :   **tchoupi : **
     A REST webservice implemented in differents langages.
 
+:   **muk : **
+    A multiboot USB key
+
+:   **framboise : **
+    Raspberry PI 2 tools
 
 ------
-> <nicolas.lamirault@gmail.com> • +337 84 12 76 65 <br />
+> <nicolas.lamirault@gmail.com> <br /> +337 84 12 76 65 <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
 > <a href="https://plus.google.com/+nicolaslamirault" alt="Google Plus"><i class="fa fa-google-plus"></i> </a>  •

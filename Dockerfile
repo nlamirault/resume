@@ -1,4 +1,4 @@
-# Copyright (C) 2014, 2015 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# Copyright (C) 2014, 2015, 2016 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -13,15 +13,24 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# FROM portefaix/base:3.3
+# MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
+
+# ENV WKHTMLTOPDF_VERSION 0.12.3
+
+# RUN apk update && apk upgrade
+
+# RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+# RUN apk add wkhtmltopdf@testing
+
 FROM ubuntu:15.04
 MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
-
 RUN apt-get update
 RUN apt-get install -y \
     latex-beamer texlive-fonts-recommended pandoc
 RUN apt-get install -y build-essential xorg libssl-dev libxrender-dev wget
-RUN wget http://wkhtmltopdf.googlecode.com/files/wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2 && \
-    tar xvjf wkhtmltopdf-0.11.0_rc1-static-amd64.tar.bz2 && \
+RUN wget http://download.gna.org/wkhtmltopdf/0.12/${WKHTMLTOPDF_VERSION}/wkhtmltox-${WKHTMLTOPDF_VERSION}_linux-generic-amd64.tar.xz \
+    tar xvjf wkhtmltopdf-${WKHTMLTOPDF_VERSION}_linux-generic-amd64.tar.xz && \
     install wkhtmltopdf-amd64 /usr/bin/wkhtmltopdf
 
 VOLUME ["/data/"]

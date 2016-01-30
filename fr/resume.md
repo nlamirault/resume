@@ -1,7 +1,7 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014, 2015 Nicolas Lamirault
+rights: © 2014, 2015, 2016 Nicolas Lamirault
 ...
 
 ----
@@ -82,7 +82,7 @@ Comptétences
 ---------------
 
 Languages
-:   **Utilisation courante(personnelle,professionnelle) : **
+:   **Utilisation courante(personnelle, professionnelle) : **
     Python, Go, Common Lisp
 
 :   **Utilisation professionnelle : **
@@ -126,7 +126,7 @@ Cloud
     VMware Server/ESX, Xen, KVM
 
 :   **Containeur : **
-    Docker, Kubernetes, CoreOS, AtomicProject
+    Docker, Kubernetes, Nomad, CoreOS, AtomicProject
 
 :   **Orchestrateur : **
     Cloudstack, Openstack
@@ -158,16 +158,33 @@ Cloud
     Un système de monitoring et collecteur de logs basé sur Docker
     (Docker/Elasticsearch/Kibana/Grafana/InfluxDB)
 
-:   **hyperion : **
-    Configuration de votre cluster Kubernetes à l'aide Terraform et Packer
+:   **hyperion-k8s : **
+    Créer votre Cloud basé sur Kubernetes à l'aide Terraform et Packer, et
+    le déployer sur plusieurs Cloud public (Amazon AWS, Google Compute Engine,
+    Digital Ocean , ...)
+
+:   **hyperion-swarm : **
+    Créer votre Cloud basé sur Docker Swarm à l'aide Terraform et Packer, et
+    le déployer sur plusieurs Cloud public (Amazon AWS, Google Compute Engine,
+    Digital Ocean , ...)
+
+:   **hyperion-nomad : **
+    Créer votre Cloud basé sur Nomad à l'aide Terraform et Packer, et
+    le déployer sur plusieurs Cloud public (Amazon AWS, Google Compute Engine,
+    Digital Ocean , ...)
+
+:   **hyperion-origin : **
+    Créer votre Cloud basé sur Openshift Origin à l'aide Terraform et Packer,
+    et le déployer sur plusieurs Cloud public (Amazon AWS, Google Compute Engine,
+    Digital Ocean , ...)
 
 :   **warhol : **
-    Une usine à image Docker supportant plusieurs hébergeurs
-    (Github, Gitlab, ...)
+    Une usine à image Docker supportant plusieurs hébergeurs (Github,
+    Gitlab, ...)
 
-:   **Portefaix : **
+:   **portefaix : **
     Des images Docker basées sur Alpine Linux
-    (Elasticsearch, Kibana, Grafana, ...)
+    (Elasticsearch, Kibana, Grafana, InfluxDB, Vault, ...)
 
 Go
 :   **aneto : **
@@ -180,27 +197,40 @@ Go
     Un générateur d'urls raccourcies simple supportant plusieurs backend de stockage
     (BoltDB, LevelDB, Redis, MongoDB, ...)
 
+:   **guzuta : **
+    Un outil pour gérer ses projets open source
+
+:   **geronimo : **
+    Analyse de ses contributions open source (Elasticsearch et Kibana)
+
 :   **iris: **
     Un client cAdvisor pour monitorer les containeurs Docker
-
-:   **go-scaleway : **
-    Un client pour le cloud Scaleway
 
 :   **blinky : **
     Un outil d'affichage d'informations systèmes
 
+:   **actarus : **
+    Un navigateur ultra léger basé sur Webkit
+
+:   **shiva : **
+    Un ultra simple serveur DHCP
+
+:   **skybox : **
+    Collecter des metrics depuis les box de FAI (Freebox, Livebox, ...) et
+    les exporter (InfluxDB, ...)
+
 Emacs
 :   **scame : **
     Une configuration clé en main d’Emacs
+
+:   **gotest.el : **
+    Un mode Emacs pour interagir avec les tests unitaires en Go.
 
 :   **emacs-travis : **
     Un client pour TravisCI
 
 :   **emacs-gitlab : **
     Un client pour Gitlab
-
-:   **gotest.el : **
-    Un mode Emacs pour interagir avec les tests unitaires en Go.
 
 :   **phpunit.el : **
     Un mode Emacs pour interagir avec les tests unitaires PHPUnit.
@@ -210,6 +240,9 @@ Emacs
 
 :   **dionysos : **
     Un simplissime lecteur de musique
+
+:   **sift.el : **
+    Interaction avec sift (une alternative à grep)
 
 Common Lisp
 :   **clappa : **
@@ -239,10 +272,17 @@ Utilitaires
 :   **tchoupi : **
     Web service REST implémenté dans différents languages.
 
+:   **muk : **
+    Une clé USB multiboot
+
+:   **framboise : **
+    Outils pour le Raspberry PI 2
+
 ------
-> <nicolas.lamirault@gmail.com> • +337 84 12 76 65 <br />
+> <nicolas.lamirault@gmail.com> <br /> +337 84 12 76 65 <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
 > <a href="https://plus.google.com/+nicolaslamirault" alt="Google Plus"><i class="fa fa-google-plus"></i> </a>  •
 > <a href="https://www.linkedin.com/in/nicolaslamirault" alt="Linkedin"><i class="fa fa-linkedin"></i> </a> •
-> <a href="https://www.facebook.com/nicolas.lamirault" alt="Facebook"><i class="fa fa-facebook"></i> </a> •
+> <a href="https://www.facebook.com/nicolas.lamirault" alt="Facebook"><i class="fa fa-facebook"></i> </a> <br />
+> <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x5F99269A6FCA437C"> PGP Key </a>

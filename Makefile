@@ -1,4 +1,4 @@
-# Copyright (C) 2015 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# Copyright (C) 2015, 2016 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,12 +17,12 @@ SHELL = /bin/bash
 DOCKER = docker
 
 APP = "resume"
+NAMESPACE="nlamirault"
+IMAGE="resume"
 VERSION = "1.0"
 
-ANETO = aneto
+DATE = `date +'%Y-%m-%d'`
 
-IMAGE_NAME="nlamirault/nlamirault"
-IMAGE_VERSION="1.0"
 
 NO_COLOR=\033[0m
 OK_COLOR=\033[32;01m
@@ -32,7 +32,7 @@ WARN_COLOR=\033[33;01m
 all: help
 
 help:
-	@echo -e "$(OK_COLOR)==== $(APP) [$(VERSION)] ====$(NO_COLOR)"
+	@echo -e "$(OK_COLOR)==== $(APP) $(DATE) [$(VERSION)] ====$(NO_COLOR)"
 	@echo -e "$(WARN_COLOR)docker$(NO_COLOR)         :  Build Docker image"
 	@echo -e "$(WARN_COLOR)cv lang=xx$(NO_COLOR)     :  Build resume"
 	@echo -e "$(WARN_COLOR)deploy lang=xx$(NO_COLOR) :  Deploy resume to the cloud"
@@ -46,14 +46,14 @@ clean:
 .PHONY: docker
 docker:
 	@echo -e "$(OK_COLOR)[$(APP)] Build Docker image$(NO_COLOR)"
-	$(DOCKER) build -t $(IMAGE_NAME):$(IMAGE_VERSION) .
+	@$(DOCKER) build -t $(NAMESPACE)/$(IMAGE):${VERSION} .
 
 .PHONY: cv
 cv:
 	@echo -e "$(OK_COLOR)[$(APP)] Build resume$(NO_COLOR)"
 	cd ${lang} && make clean d-html d-pdf d-epub && \
-			cp resume.pdf ../resume-${lang}.pdf && \
-			cp resume.epub ../resume-${lang}.epub
+			cp resume.pdf ../resume-${lang}-$(DATE).pdf && \
+			cp resume.epub ../resume-${lang}-$(DATE).epub
 
 .PHONY: deploy
 deploy:
