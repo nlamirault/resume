@@ -134,7 +134,6 @@ Cloud
 :   **Outils : **
     Vagrant, Packer, Terraform, Ansible, Puppet, Fabric
 
-
 Langues
 ---------
 
@@ -275,8 +274,13 @@ Utilitaires
 :   **muk : **
     Une clé USB multiboot
 
+IOT
+
 :   **framboise : **
     Outils pour le Raspberry PI 2
+
+:   **jarvis : **
+    Domotique en open source
 
 ------
 > <nicolas.lamirault@gmail.com> <br /> +337 84 12 76 65 <br />

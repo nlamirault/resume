@@ -84,27 +84,27 @@ Languages
 :    **Current use (personal, professional)**
      Python, Go, Common Lisp,
 
-:    **Business Use only**
+:    **Use only in work**
      Java, PHP,
 
 :    **Knowledge**
      Erlang, Ruby, OCaml, Objective-C
 
-OS
+Operating Systems
 :    **Daily**
      Linux (Debian, Arch, Ubuntu), OSX
 
 :    **Knowledge**
      BSD
 
-methodology
+Methodology
 :    **Organizational:**
      Scrum, Kanban
 
 :    **Development**
      TDD, eXtreme Programming
 
-tools
+Tools
 :    **Servers**
      Apache, Nginx, Tomcat
 
@@ -259,7 +259,14 @@ Common Lisp
 :   **cl-cloudStack-client : **
     A common lisp client for Cloudstack
 
-Utilitaires
+IOT
+:   **framboise : **
+    Raspberry PI 2 tools
+
+:   **jarvis : **
+    Open source experiments in the domotic
+
+Misc
 :   **divona : **
     Setup environment configuration for Linux using Ansible
 
@@ -269,8 +276,6 @@ Utilitaires
 :   **muk : **
     A multiboot USB key
 
-:   **framboise : **
-    Raspberry PI 2 tools
 
 ------
 > <nicolas.lamirault@gmail.com> <br /> +337 84 12 76 65 <br />
