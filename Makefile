@@ -19,7 +19,7 @@ DOCKER = docker
 APP = "resume"
 NAMESPACE="nlamirault"
 IMAGE="resume"
-VERSION = "1.0"
+VERSION = "2.0"
 
 DATE = `date +'%Y-%m-%d'`
 
@@ -45,8 +45,13 @@ clean:
 
 .PHONY: docker
 docker:
-	@echo -e "$(OK_COLOR)[$(APP)] Build Docker image$(NO_COLOR)"
+	@echo -e "$(OK_COLOR)[$(APP)] Build Docker image $(IMAGE):${VERSION}$(NO_COLOR)"
 	@$(DOCKER) build -t $(NAMESPACE)/$(IMAGE):${VERSION} .
+
+.PHONY: debug
+debug:
+	@echo -e "$(OK_COLOR)[$(APP)] Run Docker image $(IMAGE):${VERSION}$(NO_COLOR)"
+	@$(DOCKER) run -it $(NAMESPACE)/$(IMAGE):${VERSION} /bin/bash
 
 .PHONY: cv
 cv:

@@ -19,7 +19,7 @@ DOCKER=/usr/bin/docker
 PANDOC=/usr/bin/pandoc
 WKHTML=/usr/bin/wkhtmltopdf
 
-DOCKER_IMAGE=nlamirault/resume:1.0
+DOCKER_IMAGE=nlamirault/resume:2.0
 
 RESUME=resume
 INDEX=index
