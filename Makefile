@@ -24,7 +24,6 @@ VERSION = 1.0
 HTML_IMAGE = nlamirault/resume:$(VERSION)
 PDF_IMAGE = arachnysdocker/athenapdf:2.1
 
-INDEX=index
 STYLE=style.css
 SOURCE=resume
 
@@ -60,27 +59,28 @@ publish: ## Publish the Docker image
 	@echo -e "$(OK_COLOR)[$(APP)] Publish the Docker image$(NO_COLOR)"
 	@$(DOCKER) push $(NAMESPACE)/$(IMAGE):$(VERSION)
 
-build-html:
+.PHONY: html
+html:
 	@echo -e "$(OK_COLOR)[$(APP)] Build HTML resume : ${lang}$(NO_COLOR)"
 	@$(DOCKER) run --rm=true \
 		-v `pwd`:/data/ \
 		-it --name resume-html $(HTML_IMAGE) \
-		pandoc --standalone --from markdown --to html -c $(STYLE) -o /data/$(INDEX).html /data/$(SOURCE)-${lang}.md
+		pandoc --standalone --from markdown --to html -c $(STYLE) -o /data/resume-${lang}.html /data/$(SOURCE)-${lang}.md
 
-
-.PHONY: html
-html: build-html ## Build HTML resume in a language
-	@mv -f ./index.html ./resume-${lang}-$(DATE).html
-
-
-build-pdf: build-html
+.PHONY: pdf
+pdf: html
 	@echo -e "$(OK_COLOR)[$(APP)] Build PDF resume : ${lang}$(NO_COLOR)"
 	@$(DOCKER) run --rm \
 		-v `pwd`:/converted/ \
 		--name resume-pdf $(PDF_IMAGE) \
-		athenapdf index.html index-${lang}.pdf
-	@rm -f index.html
+		athenapdf resume-${lang}.html resume-${lang}.pdf
+resume:
+	@make html pdf lang=${lang} && \
+		mv resume-${lang}.html resume-${lang}-$(DATE).html && \
+		mv resume-${lang}.pdf resume-${lang}-$(DATE).pdf
 
-.PHONY: pdf
-pdf: build-pdf ## Build PDF resume in a language
-	@mv -f index-${lang}.pdf ./resume-${lang}-$(DATE).pdf
+
+.PHONY: all
+all: clean ## Make resumes
+	@make resume lang=fr
+	@make resume lang=en
