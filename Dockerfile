@@ -23,14 +23,20 @@
 # RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 # RUN apk add wkhtmltopdf@testing
 
-FROM ubuntu:15.04
-MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
-RUN apt-get update
-RUN apt-get install -y \
-    latex-beamer texlive-fonts-recommended pandoc
-RUN apt-get install -y build-essential xorg libssl-dev libxrender-dev wget
-RUN wget http://download.gna.org/wkhtmltopdf/0.12/${WKHTMLTOPDF_VERSION}/wkhtmltox-${WKHTMLTOPDF_VERSION}_linux-generic-amd64.tar.xz \
-    tar xvjf wkhtmltopdf-${WKHTMLTOPDF_VERSION}_linux-generic-amd64.tar.xz && \
-    install wkhtmltopdf-amd64 /usr/bin/wkhtmltopdf
+# FROM ubuntu:15.04
+# MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# RUN apt-get update
+# RUN apt-get install -y \
+#     latex-beamer texlive-fonts-recommended pandoc
+# RUN apt-get install -y build-essential xorg libssl-dev libxrender-dev wget
+# RUN wget http://download.gna.org/wkhtmltopdf/0.12/${WKHTMLTOPDF_VERSION}/wkhtmltox-${WKHTMLTOPDF_VERSION}_linux-generic-amd64.tar.xz \
+#     tar xvjf wkhtmltopdf-${WKHTMLTOPDF_VERSION}_linux-generic-amd64.tar.xz && \
+#     install wkhtmltopdf-amd64 /usr/bin/wkhtmltopdf
 
-VOLUME ["/data/"]
+# VOLUME ["/data/"]
+
+FROM arachnysdocker/athenapdf:2.1
+MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
+
+RUN apt-get update && \
+    apt-get install -y latex-beamer texlive-fonts-recommended pandoc

@@ -15,11 +15,13 @@
 
 SHELL = /bin/bash
 
-DOCKER=/usr/bin/docker
-PANDOC=/usr/bin/pandoc
-WKHTML=/usr/bin/wkhtmltopdf
+DOCKER = docker
+PANDOC = pandoc
+WKHTML = wkhtmltopdf
+ATHENAPDF= athenapdf
 
-DOCKER_IMAGE=nlamirault/resume:1.0
+HTML_IMAGE=nlamirault/resume:2.0
+PDF_IMAGE=nlamirault/resume:2.0
 
 RESUME=resume
 INDEX=index
@@ -56,15 +58,15 @@ pdf: clean
 d-html: clean
 	$(DOCKER) run --rm=true \
 		-v `pwd`:/data/ \
-		-it --name resume $(DOCKER_IMAGE) \
+		-it --name resume-html $(HTML_IMAGE) \
 		$(PANDOC) --standalone --from markdown --to html -c $(STYLE) -o /data/$(INDEX).html /data/$(SOURCE).md
 
 .PHONY: d-pdf
-d-pdf: clean
-	$(DOCKER) run --rm=true \
-		-v `pwd`:/data/ \
-		-it --name resume $(DOCKER_IMAGE) \
-		$(WKHTML) -L 20mm -R 20mm /data/$(INDEX).html /data/$(RESUME).pdf
+d-pdf: clean d-html
+	$(DOCKER) run --rm \
+		-v `pwd`:/converted/ \
+		--name resume-pdf $(PDF_IMAGE) \
+		athenapdf index.html index.pdf
 
 .PHONY: d-epub
 d-epub: clean
