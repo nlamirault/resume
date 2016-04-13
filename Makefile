@@ -62,21 +62,19 @@ publish: ## Publish the Docker image
 
 build-html:
 	@echo -e "$(OK_COLOR)[$(APP)] Build HTML resume : ${lang}$(NO_COLOR)"
-	@cd ${lang} && \
-		$(DOCKER) run --rm=true \
-			-v `pwd`:/data/ \
-			-it --name resume-html $(HTML_IMAGE) \
-			pandoc --standalone --from markdown --to html -c $(STYLE) -o /data/$(INDEX).html /data/$(SOURCE).md
+	@$(DOCKER) run --rm=true \
+		-v `pwd`:/data/ \
+		-it --name resume-html $(HTML_IMAGE) \
+		pandoc --standalone --from markdown --to html -c $(STYLE) -o /data/$(INDEX).html /data/$(SOURCE)-${lang}.md
 
 
 .PHONY: html
 html: build-html ## Build HTML resume in a language
-	@mv -f ${lang}/index.html ./resume-${lang}-$(DATE).html
+	@mv -f ./index.html ./resume-${lang}-$(DATE).html
 
 
-build-pdf: build-html ${lang}
+build-pdf: build-html
 	@echo -e "$(OK_COLOR)[$(APP)] Build PDF resume : ${lang}$(NO_COLOR)"
-	@mv -f ${lang}/index.html ./
 	@$(DOCKER) run --rm \
 		-v `pwd`:/converted/ \
 		--name resume-pdf $(PDF_IMAGE) \
