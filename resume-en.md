@@ -88,7 +88,7 @@ Languages
      Java, PHP,
 
 :    **Knowledge**
-     Erlang, Ruby, OCaml, Objective-C
+     Erlang, Rust, Ruby, OCaml, Objective-C
 
 Operating Systems
 :    **Daily**
@@ -125,7 +125,7 @@ Cloud
      VMware Server / ESX, Xen, KVM
 
 :    **Container:**
-     Docker, Kubernetes, Nomad, Openshift Origin, CoreOS, AtomicProject
+     Docker, Kubernetes, Nomad, Openshift Origin, CoreOS, Atomic
 
 :    **Orchestrator**
      CloudStack, Openstack
@@ -151,7 +151,8 @@ Open source
 
 Cloud
 :   **bento : **
-    Some Vagrant baseboxes made using Packer
+    Some Vagrant baseboxes made using Packer (Archlinux, Debian, CentOS,
+    FreeBSD, OpenBSD, NetBSD)
 
 :   **vision : **
     A system monitoring and log collector Docker based.
@@ -278,7 +279,7 @@ Misc
 
 
 ------
-> <nicolas.lamirault@gmail.com> <br /> +337 84 12 76 65 <br />
+> <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
 > <a href="https://plus.google.com/+nicolaslamirault" alt="Google Plus"><i class="fa fa-google-plus"></i> </a>  •

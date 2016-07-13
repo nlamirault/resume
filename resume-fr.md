@@ -89,7 +89,7 @@ Languages
     PHP, Java
 
 :   **Connaissance : **
-    Erlang, Ruby, OCaml, Objective-C
+    Erlang, Rust, Ruby, OCaml, Objective-C
 
 Système d'exploitation
 :   **Maitrise : **
@@ -126,7 +126,7 @@ Cloud
     VMware Server/ESX, Xen, KVM
 
 :   **Containeur : **
-    Docker, Kubernetes, Nomad, CoreOS, AtomicProject
+    Docker, Kubernetes, Nomad, CoreOS, Atomic
 
 :   **Orchestrateur : **
     Cloudstack, Openstack
@@ -151,7 +151,8 @@ Open source
 
 Cloud
 :   **bento : **
-    Définition de box Vagrant utilisant Packer
+    Définition de box Vagrant utilisant Packer (Arch, Debian, CentOS, FreeBSD,
+    OpenBSD, NetBSD)
 
 :   **vision : ** :
     Un système de monitoring et collecteur de logs basé sur Docker
@@ -283,7 +284,7 @@ IOT
     Domotique en open source
 
 ------
-> <nicolas.lamirault@gmail.com> <br /> +337 84 12 76 65 <br />
+> <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
 > <a href="https://plus.google.com/+nicolaslamirault" alt="Google Plus"><i class="fa fa-google-plus"></i> </a>  •
