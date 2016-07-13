@@ -18,9 +18,9 @@ Expériences
 :	*Infrastructure et Outils de Production, Orange Applications for Business*
     Ingénieur développement logiciel
 
-    - Outils de gestion de machine virtuelles (VMWare/Cloudstack)
+    - Outils de gestion de machine virtuelles (VMWare / Cloudstack)
     - Interface d'administration du Cloud interne
-    - Refonte Packaging, Integration continue et tests (Go/Docker)
+    - Refonte Packaging, Integration continue et tests (Go / Docker)
 
 07/2012-07/2014
 :	*Cloud computing, Multimédia Business Services, Orange*
@@ -158,31 +158,17 @@ Cloud
     Un système de monitoring et collecteur de logs basé sur Docker
     (Docker/Elasticsearch/Kibana/Grafana/InfluxDB)
 
-:   **hyperion-k8s : **
-    Créer votre Cloud basé sur Kubernetes à l'aide Terraform et Packer, et
-    le déployer sur plusieurs Cloud public (Amazon AWS, Google Compute Engine,
-    Digital Ocean , ...)
-
-:   **hyperion-swarm : **
-    Créer votre Cloud basé sur Docker Swarm à l'aide Terraform et Packer, et
-    le déployer sur plusieurs Cloud public (Amazon AWS, Google Compute Engine,
-    Digital Ocean , ...)
-
-:   **hyperion-nomad : **
-    Créer votre Cloud basé sur Nomad à l'aide Terraform et Packer, et
-    le déployer sur plusieurs Cloud public (Amazon AWS, Google Compute Engine,
-    Digital Ocean , ...)
-
-:   **hyperion-origin : **
-    Créer votre Cloud basé sur Openshift Origin à l'aide Terraform et Packer,
-    et le déployer sur plusieurs Cloud public (Amazon AWS, Google Compute Engine,
+:   **hyperion-xxx : **
+    Créer votre Cloud basé sur Kubernetes, Swarm, Nomad, Rancher ou
+    Openshift Origin à l'aide Terraform et Packer, et déployer le sur
+    plusieurs Cloud public (Amazon AWS, Google Compute Engine,
     Digital Ocean , ...)
 
 :   **warhol : **
     Une usine à image Docker supportant plusieurs hébergeurs (Github,
     Gitlab, ...)
 
-:   **portefaix : **
+:   **portefaix-xxx : **
     Des images Docker basées sur Alpine Linux
     (Elasticsearch, Kibana, Grafana, InfluxDB, Vault, ...)
 
@@ -267,13 +253,18 @@ Common Lisp
 
 Utilitaires
 :   **divona : **
-    Un outil de configuration de poste Linux basé sur Ansible.
+    Un outil de configuration de poste Linux ou de machine virtuelle basé sur Ansible.
+    Compatible Linux (Archlinux, Debian, CentOS), BSD (FreeBSD, NetBSD, OpenBSD) et OSX.
 
 :   **tchoupi : **
     Web service REST implémenté dans différents languages.
 
 :   **muk : **
     Une clé USB multiboot
+
+:   **kodi_exporter: **
+    Exporter Prometheus afin d'extraire des statistiques de Kodi (API JSONRPC) et de les
+    visualiser dans Grafana
 
 IOT
 

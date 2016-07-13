@@ -17,9 +17,9 @@ Expériences
 :    *Infrastructure and Production Tools, Orange Apps for Business, Orange*
      Software Engineer
 
-    - Virtual machine management tools ( VMWare / CloudStack )
+    - Virtual machine management tools (VMWare / CloudStack
     - Administration Interface for the internal Cloud
-    - Redesigned Packaging, Integration and continuous tests (Go/Docker)
+    - Redesigned Packaging, Integration and continuous tests (Go / Docker)
 
 07/2012-07/2014
 :    *Cloud computing, Multimedia Business Services, Orange*
@@ -158,27 +158,17 @@ Cloud
     A system monitoring and log collector Docker based.
     (Docker/Elasticsearch/Kibana/Grafana/InfluxDB)
 
-:   **hyperion-k8s : **
-    Setup your own Kubernetes cluster using Terraform and Packer
-
-:   **hyperion-swarm : **
-    Setup your own Docker Swarm cluster using Terraform and Packer
-
-:   **hyperion-nomad : **
-    Setup your own Nomad cluster using Terraform and Packer
-
-:   **hyperion-origin : **
-    Setup your own Openshift Origin using Terraform and Packer
-
-:   **hyperion-rancher : **
-    Setup your own cloud Rancher using Terraform and Packer
+:   **hyperion-xxx : **
+    Setup your own Kubernetes, Swarm, Nomad, Rancher or Openshift Origin cluster
+    using Terraform and Packer and deploy it on public Cloud provider (AWS,
+    Google Compute Engine, Digital Ocean, ...)
 
 :   **warholl : **
     A simple Docker image factory system
 
-:   **portefaix :**
-    Containerized app system based on Docker and Alpine Linux (Elasticsearch,
-    Kibana, Grafana, InfluxDB, Vault, ...)
+:   **portefaix-xxx :**
+    Containerized app system based on Docker and Alpine Linux
+    (Elasticsearch, Kibana, Grafana, InfluxDB, Vault, ...)
 
 Go
 :   **aneto : **
@@ -216,17 +206,8 @@ Emacs
 :   **scame : **
     An Emacs configuration
 
-:   **fabric.el : **
-    Emacs mode to Fabric.
-
-:   **phpunit.el : **
-    Emacs mode to phpunit and test command line tool
-
 :   **gotest.el : **
     Emacs mode to go unit test command line tool
-
-:   **marcopolo : **
-    An Emacs client to the Docker registry / Hub API
 
 :   **emacs-travis : **
     An Emacs client for TravisCI
@@ -234,11 +215,17 @@ Emacs
 :   **emacs-gitlab : **
     An Emacs client for Gitlab
 
-:   **sift.el : **
-    A front-end for sift, a fast and powerful alternative to grep.
+:   **phpunit.el : **
+    Emacs mode to phpunit and test command line tool
+
+:   **marcopolo : **
+    An Emacs client to the Docker registry / Hub API
 
 :   **dionysos : **
     A music player for Emacs
+
+:   **sift.el : **
+    A front-end for sift, a fast and powerful alternative to grep.
 
 Common Lisp
 :   **clappa : **
@@ -269,13 +256,18 @@ IOT
 
 Misc
 :   **divona : **
-    Setup environment configuration for Linux using Ansible
+    Setup environment configuration for Linux using Ansible. Support Linux
+    (Archlinux, Debian, CentOs), BSD (FreeBSD, OpenBSD, NetBSD) and OSX.
 
 :   **tchoupi : **
     A REST webservice implemented in differents langages.
 
 :   **muk : **
     A multiboot USB key
+
+:   **kodi_exporter : **
+    A Prometheus exporter used to extract statistics from Kodi (API JSONRPC) and
+    visualize it into Grafana.
 
 
 ------
