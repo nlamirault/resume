@@ -1,4 +1,4 @@
-# Copyright (C) 2015, 2016 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# Copyright (C) 2015, 2016, 2017 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -60,7 +60,7 @@ publish: ## Publish the Docker image
 	@$(DOCKER) push $(NAMESPACE)/$(IMAGE):$(VERSION)
 
 .PHONY: html
-html:
+html: ## Make the HTML version (lang=xx)
 	@echo -e "$(OK_COLOR)[$(APP)] Build HTML resume : ${lang}$(NO_COLOR)"
 	@$(DOCKER) run --rm=true \
 		-v `pwd`:/data/ \
@@ -68,17 +68,17 @@ html:
 		pandoc --standalone --from markdown --to html -c $(STYLE) -o /data/resume-${lang}.html /data/$(SOURCE)-${lang}.md
 
 .PHONY: pdf
-pdf: html
+pdf: html ## Make the PDF version (lang=xx)
 	@echo -e "$(OK_COLOR)[$(APP)] Build PDF resume : ${lang}$(NO_COLOR)"
 	@$(DOCKER) run --rm \
 		-v `pwd`:/converted/ \
 		--name resume-pdf $(PDF_IMAGE) \
 		athenapdf resume-${lang}.html resume-${lang}.pdf
-resume:
+.PHONY: resume
+resume: ## Make resume (lang=xx)
 	@make html pdf lang=${lang} && \
 		mv resume-${lang}.html resume-${lang}-$(DATE).html && \
 		mv resume-${lang}.pdf resume-${lang}-$(DATE).pdf
-
 
 .PHONY: all
 all: clean ## Make resumes
