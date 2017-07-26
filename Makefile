@@ -22,7 +22,7 @@ IMAGE = resume
 VERSION = 1.0
 
 HTML_IMAGE = nlamirault/resume:$(VERSION)
-PDF_IMAGE = arachnysdocker/athenapdf:2.6.0
+PDF_IMAGE = arachnysdocker/athenapdf:2.7.1
 
 STYLE=style.css
 SOURCE=resume

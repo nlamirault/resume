@@ -1,7 +1,7 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014, 2015, 2016 Nicolas Lamirault
+rights: © 2014-2017 Nicolas Lamirault
 ...
 
 ----
@@ -13,13 +13,25 @@ Software Engineer, Open Source specialist.
 Expériences
 --------------
 
-07/2014-.
+10/2016-.
+:    *DevOps Tools, Orange Application for Business*
+     Software Engineer
+
+     - API Gateway for internale services (Golang, gRPC)
+     - Setting metrics in Cloud services (Opentracing Python and Golang, Jaeger)
+     - Messaging between services using Nats.io (Golang)
+     - Prometheus exporters for REST and gRPC services
+     - Prometheus exporter for vSphere (Golang)
+     - Deployment on Kubernetes
+     - Containers monitoring (Golang)
+
+07/2014-10/2016
 :    *Infrastructure and Production Tools, Orange Apps for Business, Orange*
      Software Engineer
 
     - Virtual machine management tools (VMWare / CloudStack
     - Administration Interface for the internal Cloud
-    - Redesigned Packaging, Integration and continuous tests (Go / Docker)
+    - Redesigned Packaging, Integration and continuous tests (Golang / Docker)
 
 07/2012-07/2014
 :    *Cloud computing, Multimedia Business Services, Orange*
@@ -154,23 +166,24 @@ Cloud
     Some Vagrant baseboxes made using Packer (Archlinux, Debian, CentOS,
     FreeBSD, OpenBSD, NetBSD)
 
-:   **vision : **
-    A system monitoring and log collector Docker based.
-    (Docker/Elasticsearch/Kibana/Grafana/InfluxDB)
-
 :   **hyperion-xxx : **
     Setup your own Kubernetes, Swarm, Nomad, Rancher or Openshift Origin cluster
     using Terraform and Packer and deploy it on public Cloud provider (AWS,
     Google Compute Engine, Digital Ocean, ...)
 
-:   **warholl : **
-    A simple Docker image factory system
+:   **helmsman : ** [Github](https://github.com/nlamirault/helmsman)
+    Text User Interface for Kubernetes
 
-:   **portefaix-xxx :**
+:   **portefaix : **
     Containerized app system based on Docker and Alpine Linux
     (Elasticsearch, Kibana, Grafana, InfluxDB, Vault, ...)
 
-Go
+Tools
+
+:   **divona : **
+    Setup environment configuration for Linux using Ansible. Support Linux
+    (Archlinux, Debian, CentOs), BSD (FreeBSD, OpenBSD, NetBSD) and OSX.
+
 :   **aneto : **
     A backup tool using Amazon Glacier
 
@@ -181,26 +194,14 @@ Go
     A simple URL Shortener with multiple backend
     (BoltDB, LevelDB, Redis, MongoDB, ...)
 
-:   **iris : **
-    A simple cadvisor client to monitor Docker containers.
-
-:   **guzuta : **
-    A CLI to manage personal open source contributions.
-
-:   **geronimo : **
-    Analyse of your open source projects with Elasticsearch and Kibana
-
-:   **blinky : **
-    Display system informations and/or ASCII distributions logos.
-
-:   **actarus : **
-    A lightweight web browser based on the webkit web browser engine
-
-:   **shiva : **
-    A simple DHCP server.
-
 :   **skybox : **
     Collecting metrics from a box provider and exporting data
+
+:   **chione : ** [Github](https://github.com/nlamirault/chione) - (Golang) -
+    CLI to retrive ski resorts informations
+
+:   **pilotariak : ** [Github](https://github.com/pilotariak) - (Golang, gRPC) -
+    Some utilities for Pelota informations
 
 Emacs
 :   **scame : **
@@ -209,43 +210,11 @@ Emacs
 :   **gotest.el : **
     Emacs mode to go unit test command line tool
 
-:   **emacs-travis : **
-    An Emacs client for TravisCI
-
-:   **emacs-gitlab : **
-    An Emacs client for Gitlab
-
 :   **phpunit.el : **
     Emacs mode to phpunit and test command line tool
 
-:   **marcopolo : **
-    An Emacs client to the Docker registry / Hub API
-
-:   **dionysos : **
-    A music player for Emacs
-
 :   **sift.el : **
     A front-end for sift, a fast and powerful alternative to grep.
-
-Common Lisp
-:   **clappa : **
-    An asdf-install compatible [Common Lisp Application Archive](http://boinkor.net/archives/2007/04/some_details_about_clappa.html)
-    Clappa has been accepted for the Google Summer of Code 2007.
-
-:   **ernestine : **
-    Ernestine is a music management application in McClim.
-
-:   **climc : **
-    A Common Lisp Instant Messaging Client.
-
-:   **cletris : **
-    A Tetris game written in Common Lisp
-
-:   **climon : **
-    A Simon game written in Common Lisp
-
-:   **cl-cloudStack-client : **
-    A common lisp client for Cloudstack
 
 IOT
 :   **framboise : **
@@ -254,20 +223,8 @@ IOT
 :   **jarvis : **
     Open source experiments in the domotic
 
-Misc
-:   **divona : **
-    Setup environment configuration for Linux using Ansible. Support Linux
-    (Archlinux, Debian, CentOs), BSD (FreeBSD, OpenBSD, NetBSD) and OSX.
-
-:   **tchoupi : **
-    A REST webservice implemented in differents langages.
-
-:   **muk : **
-    A multiboot USB key
-
-:   **kodi_exporter : **
-    A Prometheus exporter used to extract statistics from Kodi (API JSONRPC) and
-    visualize it into Grafana.
+:   **zeiot : ** [Github](https://github.com/zeiot)
+    Docker images for Rasperry PI 2 and 3: Prometheus, Domoticz, CoreDNS, Prometheus exporters (node, pihole, nats, ...), Grafana, Nats, ...
 
 
 ------

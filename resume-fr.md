@@ -1,7 +1,7 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014, 2015, 2016 Nicolas Lamirault
+rights: © 2014-2017 Nicolas Lamirault
 ...
 
 ----
@@ -14,10 +14,23 @@ Ingénieur développement logiciel, spécialiste Open Source.
 Expériences
 --------------
 
-07/2014-.
+10/2016-.
+:   *DevOps Tools, Orange Applications for Business*
+    Ingénieur développement logiciel
+
+    - API Gateway pour l'orchestrateur des Clouds internes (Golang, gRPC)
+    - Mise en place des traces applicatives des différentes web services (OpenTracing Python et Golang, Jaeger)
+    - Diffusion de messages basé sur Nats.io (Golang)
+    - Exporteurs Prometheus des différents métriques des services REST (Python, Golang) et gRPC
+    - Exporteur Prometheus des métriques de performances vSphere (Golang)
+    - Déploiement des services REST et de l'API Gateway sous Kubernetes
+    - Supervision de containers (Golang)
+
+07/2014-10/2016
 :	*Infrastructure et Outils de Production, Orange Applications for Business*
     Ingénieur développement logiciel
 
+    - Remplacement de l'orchestrateur Cloudstack par un orchestrateur interne (Python)
     - Outils de gestion de machine virtuelles (VMWare / Cloudstack)
     - Interface d'administration du Cloud interne
     - Refonte Packaging, Integration continue et tests (Go / Docker)
@@ -83,7 +96,7 @@ Comptétences
 
 Languages
 :   **Utilisation courante(personnelle, professionnelle) : **
-    Python, Go, Common Lisp
+    Go, Python, Common Lisp
 
 :   **Utilisation professionnelle : **
     PHP, Java
@@ -116,7 +129,7 @@ Outils
     Emacs, Intellij, Eclipse
 
 :   **Build : **
-    Ant, Gradle, Maven, PIP
+    Bazel, Pip, ...
 
 :   **Systèmes de gestions de versions : **
     Git, Subversion, CVS
@@ -126,7 +139,7 @@ Cloud
     VMware Server/ESX, Xen, KVM
 
 :   **Containeur : **
-    Docker, Kubernetes, Nomad, CoreOS, Atomic
+    Docker, Kubernetes, Nomad, CoreOS, Openshift (v3)
 
 :   **Orchestrateur : **
     Cloudstack, Openstack
@@ -150,129 +163,70 @@ Open source
 ----------------
 
 Cloud
-:   **bento : **
+:   **bento : **[Github](https://github.com/nlamirault/bento)
     Définition de box Vagrant utilisant Packer (Arch, Debian, CentOS, FreeBSD,
     OpenBSD, NetBSD)
 
-:   **vision : ** :
-    Un système de monitoring et collecteur de logs basé sur Docker
-    (Docker/Elasticsearch/Kibana/Grafana/InfluxDB)
+:   **portefaix : ** [Github](https://github.com/portefaix)
+    Des images Docker basées sur Alpine Linux et un POC pour créer son prore Cloud
+    (Kubernetes, Openshift, Swarm, ...) basé sur Packer/Terraform.
 
-:   **hyperion-xxx : **
-    Créer votre Cloud basé sur Kubernetes, Swarm, Nomad, Rancher ou
-    Openshift Origin à l'aide Terraform et Packer, et déployer le sur
-    plusieurs Cloud public (Amazon AWS, Google Compute Engine,
-    Digital Ocean , ...)
+:   **helmsman : ** [Github](https://github.com/nlamirault/helmsman)
+    Text User Interface pour Kubernetes
 
-:   **warhol : **
-    Une usine à image Docker supportant plusieurs hébergeurs (Github,
-    Gitlab, ...)
-
-:   **portefaix-xxx : **
-    Des images Docker basées sur Alpine Linux
-    (Elasticsearch, Kibana, Grafana, InfluxDB, Vault, ...)
-
-Go
-:   **aneto : **
-    Un outil de sauvegarde utilisant Amazon Glacier
-
-:   **enigma : **
-    Un coffre fort dans le Cloud utilisant Amazon S3 et Amazon KMS
-
-:   **abraracourcix : **
-    Un générateur d'urls raccourcies simple supportant plusieurs backend de stockage
-    (BoltDB, LevelDB, Redis, MongoDB, ...)
-
-:   **guzuta : **
-    Un outil pour gérer ses projets open source
-
-:   **geronimo : **
-    Analyse de ses contributions open source (Elasticsearch et Kibana)
-
-:   **iris: **
-    Un client cAdvisor pour monitorer les containeurs Docker
-
-:   **blinky : **
-    Un outil d'affichage d'informations systèmes
-
-:   **actarus : **
-    Un navigateur ultra léger basé sur Webkit
-
-:   **shiva : **
-    Un ultra simple serveur DHCP
-
-:   **skybox : **
-    Collecter des metrics depuis les box de FAI (Freebox, Livebox, ...) et
-    les exporter (InfluxDB, ...)
-
-Emacs
-:   **scame : **
-    Une configuration clé en main d’Emacs
-
-:   **gotest.el : **
-    Un mode Emacs pour interagir avec les tests unitaires en Go.
-
-:   **emacs-travis : **
-    Un client pour TravisCI
-
-:   **emacs-gitlab : **
-    Un client pour Gitlab
-
-:   **phpunit.el : **
-    Un mode Emacs pour interagir avec les tests unitaires PHPUnit.
-
-:   **marcopolo : **
-    Un client pour Docker Hub et registry.
-
-:   **dionysos : **
-    Un simplissime lecteur de musique
-
-:   **sift.el : **
-    Interaction avec sift (une alternative à grep)
-
-Common Lisp
-:   **clappa : **
-    An asdf-install compatible [Common Lisp Application Archive](http://boinkor.net/archives/2007/04/some_details_about_clappa.html)
-    (Sélectionné en tant que mentor pour le Google Summer of Code 2007)
-
-:   **ernestine : **
-    Un gestionnaire de musique écrit en Common Lisp utilisant McClim.
-
-:   **climc : **
-    Un client de messagerie instantanée XMPP écrit en Common Lisp utilisant
-    McClim.
-
-:   **Cletris : **
-    Cletris, un Tetris écrit en Common Lisp utilisant la librairie SDL.
-
-:   **Cletris : **
-    Climon, clone de Simon, écrit en Common Lisp utilisant la librairie SDL.
-
-:   **cl-cloudStack-client : **
-    Un client CloudStack en Common Lisp
+:   **hyperion-xxx : ** [github](https://github.com/portefaix)
+    POC pour déployer Kubernetes, Rancher, Openshift, ... en utilisant Packer et
+    Terraform sur les différents Cloud publics
 
 Utilitaires
-:   **divona : **
+:   **divona : ** [Github](https://github.com/nlamirault/divona)
     Un outil de configuration de poste Linux ou de machine virtuelle basé sur Ansible.
     Compatible Linux (Archlinux, Debian, CentOS), BSD (FreeBSD, NetBSD, OpenBSD) et OSX.
 
-:   **tchoupi : **
-    Web service REST implémenté dans différents languages.
+:   **aneto : ** [Github](https://github.com/nlamirault/aneto) - (Golang) -
+    Un outil de sauvegarde utilisant Amazon Glacier
 
-:   **muk : **
-    Une clé USB multiboot
+:   **enigma : ** [Github](https://github.com/nlamirault/enigma) - (Golang) -
+    Un coffre fort dans le Cloud utilisant Amazon S3 et Amazon KMS
 
-:   **kodi_exporter: **
-    Exporter Prometheus afin d'extraire des statistiques de Kodi (API JSONRPC) et de les
-    visualiser dans Grafana
+:   **abraracourcix : ** [Github](https://github.com/nlamirault/abraracourcix) - (Golang) -
+    Un générateur d'urls raccourcies simple supportant plusieurs backend de stockage
+    (BoltDB, LevelDB, Redis, MongoDB, ...)
+
+:   **skybox : ** [Github](https://github.com/nlamirault/skybox) - (Golang) -
+    Collecter des metrics depuis les box de FAI (Freebox, Livebox, ...) et
+    les exportent pour Prometheus
+
+:   **chione : ** [Github](https://github.com/nlamirault/chione) - (Golang) -
+    CLI pour récupérer des informations sur les statison de ski (enneigment, pistes ouvertes, ...)
+
+:   **pilotariak : ** [Github](https://github.com/pilotariak) - (Golang, gRPC) -
+    Outillage pour récupérer des informations sur les évènements de pelote basque
+
+Emacs
+:   **scame : ** [Github](https://github.com/nlamirault/scame)
+    Une configuration clé en main d’Emacs
+
+:   **gotest.el : ** [Github](https://github.com/nlamirault/gotest.el)
+    Un mode Emacs pour interagir avec les tests unitaires en Go.
+
+:   **phpunit.el : ** [Github](https://github.com/nlamirault/phpunit.el)
+    Un mode Emacs pour interagir avec les tests unitaires PHPUnit.
+
+:   **sift.el, ripgrep.el : ** [Github](https://github.com/nlamirault/sift.el), [Github](https://github.com/nlamirault/ripgrep.el)
+    Interaction avec sift ou ripgrep (alternatives à grep)
+
 
 IOT
 
-:   **framboise : **
-    Outils pour le Raspberry PI 2
+:   **framboise : ** [Github](https://github.com/nlamirault/framboise)
+    Outils pour Raspberry PI
 
-:   **jarvis : **
+:   **jarvis : ** [Github](https://github.com/zeiot/jarvis)
     Domotique en open source
+
+:   **zeiot : ** [Github](https://github.com/zeiot)
+    Images Docker pour Rasperry PI 2 et 3: Prometheus, Domoticz, CoreDNS, Prometheus exporters (node, pihole, nats, ...), Grafana, Nats, ...
 
 ------
 > <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br />
