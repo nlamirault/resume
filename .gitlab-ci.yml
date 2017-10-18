@@ -19,13 +19,16 @@ services:
 
 variables:
   DOCKER_DRIVER: overlay
+  STYLE: style.css
+  SOURCE: resume
+  PDF_IMAGE: arachnysdocker/athenapdf:2.7.1
 
 before_script:
   - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
 
 stages:
   - build
-  - doc
+  - publish
 
 build:docker:
   stage: build
@@ -35,20 +38,16 @@ build:docker:
   only:
     - master
 
-doc:pdf:
-  stage: doc
+publish:resume:
+  stage: publish
   script:
-    - make html
-  artifacts:
-    paths:
-     - resume-fr.pdf
-     - resume-en.pdf
-
-doc:html:
-  stage: doc
-  script:
-    - make pdf
+    - docker run --rm=true -v `pwd`:/data/ -i --name resume-html $CI_REGISTRY_IMAGE:latest pandoc --standalone --from markdown --to html -c $STYLE -o /data/resume-fr.html /data/$SOURCE-fr.md
+    - docker run --rm=true -v `pwd`:/data/ -i --name resume-html $CI_REGISTRY_IMAGE:latest pandoc --standalone --from markdown --to html -c $STYLE -o /data/resume-en.html /data/$SOURCE-en.md
+    - docker run --rm -v `pwd`:/converted/ --name resume-pdf $PDF_IMAGE athenapdf resume-fr.html resume-fr.pdf
+    - docker run --rm -v `pwd`:/converted/ --name resume-pdf $PDF_IMAGE athenapdf resume-en.html resume-en.pdf
   artifacts:
     paths:
      - resume-fr.html
      - resume-en.html
+     - resume-fr.pdf
+     - resume-en.pdf
