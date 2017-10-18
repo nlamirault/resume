@@ -36,7 +36,7 @@ build:docker:
     - master
 
 doc:pdf:
-  stage: documentation
+  stage: doc
   script:
     - make html
   artifacts:
@@ -45,7 +45,7 @@ doc:pdf:
      - resume-en.pdf
 
 doc:html:
-  stage: documentation
+  stage: doc
   script:
     - make pdf
   artifacts:
