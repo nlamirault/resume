@@ -18,8 +18,8 @@ Expériences
 :   *DevOps Tools, Orange Applications for Business*
     Ingénieur développement logiciel
 
-    - API Gateway pour l'orchestrateur des Clouds internes (Golang, gRPC)
-    - Mise en place des traces applicatives des différentes web services (OpenTracing Python et Golang, Jaeger)
+    - API Gateway pour l'orchestrateur des Clouds internes (Golang, gRPC, Bazel)
+    - Mise en place des traces applicatives des différentes web services (OpenTracing Python et Golang) par Jaeger
     - Diffusion de messages basé sur Nats.io (Golang)
     - Exporteurs Prometheus des différents métriques des services REST (Python, Golang) et gRPC
     - Exporteur Prometheus des métriques de performances vSphere (Golang)
@@ -168,7 +168,7 @@ Cloud
     OpenBSD, NetBSD)
 
 :   **portefaix : ** [Github](https://github.com/portefaix)
-    Des images Docker basées sur Alpine Linux et un POC pour créer son prore Cloud
+    Des images Docker basées sur Alpine Linux et un POC pour créer son propre Cloud
     (Kubernetes, Openshift, Swarm, ...) basé sur Packer/Terraform.
 
 :   **helmsman : ** [Github](https://github.com/nlamirault/helmsman)
