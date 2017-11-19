@@ -19,30 +19,30 @@ Expériences
     Ingénieur développement logiciel
 
     - API Gateway pour l'orchestrateur des Clouds internes (Golang, gRPC, Bazel)
-    - Mise en place des traces applicatives des différentes web services (OpenTracing Python et Golang) par Jaeger
+    - Intégration continue et déploiement par Kubernetes et GitlabCI
+    - Platforme Opentracing sur Kubernetes (OpenTracing Python et Golang) basée sur Jaeger
     - Diffusion de messages basé sur Nats.io (Golang)
     - Exporteurs Prometheus des différents métriques des services REST (Python, Golang) et gRPC
     - Exporteur Prometheus des métriques de performances vSphere (Golang)
-    - Déploiement des services REST et de l'API Gateway sous Kubernetes
     - Supervision de containers (Golang)
 
 07/2014-10/2016
 :	*Infrastructure et Outils de Production, Orange Applications for Business*
     Ingénieur développement logiciel
 
-    - Remplacement de l'orchestrateur Cloudstack par un orchestrateur interne (Python)
-    - Outils de gestion de machine virtuelles (VMWare / Cloudstack)
-    - Interface d'administration du Cloud interne
-    - Refonte Packaging, Integration continue et tests (Go / Docker)
+    - Remplacement de l'orchestrateur Cloudstack par un orchestrateur interne (Python, Flask, MariaDB)
+    - Outils de gestion de machine virtuelles (VMware vSphere / Cloudstack)
+    - Interface d'administration du Cloud interne (PHP, Mysql, Docker)
+    - Refonte Packaging, Integration continue et tests (Golang, Docker)
 
 07/2012-07/2014
 :	*Cloud computing, Multimédia Business Services, Orange*
     Ingénieur devops dans le département Cloud Computing
 
-    - Mise en place de l’intégration continue pour l’IAAS.
+    - Mise en place de l’intégration continue pour l’IAAS (Jenkins, Gitweb)
     - Refonte de l’architecture logicielle de l’IAAS (Apache Cloudstack, Jersey, Flask, RabbitMQ, Python CLI, NodeJS, StatusDashboard)
     - Packaging Cloudstack pour l’orchestrateur du Cloud de Multimedia Business Services
-    - Mise en place d’un environnement de développement et de build basé sur VirtualBox/Vagrant/Ansible
+    - Automatisation d'un environnement de développement et build commun (VirtualBox, Vagrant, Ansible)
 
 06/2011-07/2012
 :   *Développement NFC, Multimédia Business Services, Orange*
@@ -111,29 +111,6 @@ Système d'exploitation
 :   **Connaissance : **
     BSD
 
-Méthodologie
-:   **Organisationnel : **
-    Scrum, Kanban
-
-:   **Développement : **
-    TDD, eXtreme Programming
-
-Outils
-:   **Serveurs : **
-    Apache, Nginx, Tomcat
-
-:   **Base de données : **
-    MySQL, PostgreSQL, noSQL (CouchDB, MongoDB)
-
-:   **Développement : **
-    Emacs, Intellij, Eclipse
-
-:   **Build : **
-    Bazel, Pip, ...
-
-:   **Systèmes de gestions de versions : **
-    Git, Subversion, CVS
-
 Cloud
 :   **Virtualisation : **
     VMware Server/ESX, Xen, KVM
@@ -163,76 +140,62 @@ Open source
 ----------------
 
 Cloud
-:   **bento : **[Github](https://github.com/nlamirault/bento)
+:   **[bento](https://github.com/nlamirault/bento)**
     Définition de box Vagrant utilisant Packer (Arch, Debian, CentOS, FreeBSD,
     OpenBSD, NetBSD)
 
-:   **portefaix : ** [Github](https://github.com/portefaix)
+:   **[portefaix](https://github.com/portefaix)**
     Des images Docker basées sur Alpine Linux et un POC pour créer son propre Cloud
     (Kubernetes, Openshift, Swarm, ...) basé sur Packer/Terraform.
 
-:   **helmsman : ** [Github](https://github.com/nlamirault/helmsman)
-    Text User Interface pour Kubernetes
-
-:   **hyperion-xxx : ** [github](https://github.com/portefaix)
+:   **[hyperion-xxx](https://github.com/portefaix)**
     POC pour déployer Kubernetes, Rancher, Openshift, ... en utilisant Packer et
     Terraform sur les différents Cloud publics
 
-Utilitaires
-:   **divona : ** [Github](https://github.com/nlamirault/divona)
-    Un outil de configuration de poste Linux ou de machine virtuelle basé sur Ansible.
-    Compatible Linux (Archlinux, Debian, CentOS), BSD (FreeBSD, NetBSD, OpenBSD) et OSX.
-
-:   **aneto : ** [Github](https://github.com/nlamirault/aneto) - (Golang) -
-    Un outil de sauvegarde utilisant Amazon Glacier
-
-:   **enigma : ** [Github](https://github.com/nlamirault/enigma) - (Golang) -
-    Un coffre fort dans le Cloud utilisant Amazon S3 et Amazon KMS
-
-:   **abraracourcix : ** [Github](https://github.com/nlamirault/abraracourcix) - (Golang) -
+Divers
+:   **[abraracourcix](https://github.com/nlamirault/abraracourcix)** (Golang, gRPC) -
     Un générateur d'urls raccourcies simple supportant plusieurs backend de stockage
     (BoltDB, LevelDB, Redis, MongoDB, ...)
 
-:   **skybox : ** [Github](https://github.com/nlamirault/skybox) - (Golang) -
-    Collecter des metrics depuis les box de FAI (Freebox, Livebox, ...) et
-    les exportent pour Prometheus
+:   **[aneto](https://github.com/nlamirault/aneto)** - (Golang) -
+    Un outil de sauvegarde utilisant Amazon Glacier
 
-:   **chione : ** [Github](https://github.com/nlamirault/chione) - (Golang) -
+:   **[enigma](https://github.com/nlamirault/enigma)** - (Golang) -
+    Un coffre fort dans le Cloud utilisant Amazon S3 et Amazon KMS
+
+:   **[chione](https://github.com/nlamirault/chione)** - (Golang) -
     CLI pour récupérer des informations sur les statison de ski (enneigment, pistes ouvertes, ...)
 
-:   **pilotariak : ** [Github](https://github.com/pilotariak) - (Golang, gRPC) -
+:   **[pilotariak](https://github.com/pilotariak)** - (Golang, gRPC) -
     Outillage pour récupérer des informations sur les évènements de pelote basque
 
+
+Automatisation
+:   **[scame](https://github.com/nlamirault/scame)** (une configuration clé en main d’Emacs),
+    **[miv](https://github.com/nlamirault/miv)** (une configuration personnelle pour Neovim),
+    **[divona](https://github.com/nlamirault/divona)** (Un outil de configuration de poste Linux
+    ou de machine virtuelle basé sur Ansible. Compatible Archlinux, Debian, CentOS, FreeBSD,
+    NetBSD, OpenBSD et OSX),
+
 Emacs
-:   **scame : ** [Github](https://github.com/nlamirault/scame)
-    Une configuration clé en main d’Emacs
-
-:   **gotest.el : ** [Github](https://github.com/nlamirault/gotest.el)
-    Un mode Emacs pour interagir avec les tests unitaires en Go.
-
-:   **phpunit.el : ** [Github](https://github.com/nlamirault/phpunit.el)
-    Un mode Emacs pour interagir avec les tests unitaires PHPUnit.
-
-:   **sift.el, ripgrep.el : ** [Github](https://github.com/nlamirault/sift.el), [Github](https://github.com/nlamirault/ripgrep.el)
-    Interaction avec sift ou ripgrep (alternatives à grep)
-
+:   **[gotest.el](https://github.com/nlamirault/gotest.el)** (un mode Emacs pour interagir avec
+    les tests unitaires en Go)
+    **[phpunit.el](https://github.com/nlamirault/phpunit.el)** (un mode Emacs pour interagir avec
+    les tests unitaires PHPUnit)
+    **[sift.el](https://github.com/nlamirault/sift.el)**, **[ripgrel.el](https://github.com/nlamirault/ripgrep.el)**,
+    (interaction avec sift ou ripgrep, des alternatives à grep)
 
 IOT
 
-:   **framboise : ** [Github](https://github.com/nlamirault/framboise)
-    Outils pour Raspberry PI
-
-:   **jarvis : ** [Github](https://github.com/zeiot/jarvis)
-    Domotique en open source
-
-:   **zeiot : ** [Github](https://github.com/zeiot)
-    Images Docker pour Rasperry PI 2 et 3: Prometheus, Domoticz, CoreDNS, Prometheus exporters (node, pihole, nats, ...), Grafana, Nats, ...
+:   **[framboise](https://github.com/nlamirault/framboise)**(outils pour Raspberry PI),
+    **[jarvis](https://github.com/zeiot/jarvis)**(cluster Kubernetes sur RaspberryPI)
+    **[home-assistant](https://github.com/nlamirault/home-assistant-configuration)**(configuration domotique)
+    **[Docker ARM](https://github.com/zeiot)**(images Docker pour Rasperry PI 2/3: Prometheus, Domoticz, CoreDNS,
+    Prometheus exporters, Grafana, Nats, ...)
 
 ------
 > <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
-> <a href="https://plus.google.com/+nicolaslamirault" alt="Google Plus"><i class="fa fa-google-plus"></i> </a>  •
 > <a href="https://www.linkedin.com/in/nicolaslamirault" alt="Linkedin"><i class="fa fa-linkedin"></i> </a> •
-> <a href="https://www.facebook.com/nicolas.lamirault" alt="Facebook"><i class="fa fa-facebook"></i> </a> <br />
-> <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x5F99269A6FCA437C"> PGP Key </a>
+> <a href="https://keybase.io/nlamirault"><i class="fa fa-key"></i></a>
