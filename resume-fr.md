@@ -16,7 +16,7 @@ Expériences
 
 10/2016-.
 :   *DevOps Tools, Orange Applications for Business*
-    Ingénieur développement logiciel
+    Ingénieur expert
 
     - API Gateway pour l'orchestrateur des Clouds internes (Golang, gRPC, Bazel)
     - Intégration continue et déploiement par Kubernetes et GitlabCI
@@ -95,33 +95,33 @@ Comptétences
 ---------------
 
 Languages
-:   **Utilisation courante(personnelle, professionnelle) : **
+:   *Utilisation courante(personnelle, professionnelle) : *
     Go, Python, Common Lisp
 
-:   **Utilisation professionnelle : **
+:   *Utilisation professionnelle : *
     PHP, Java
 
 :   **Connaissance : **
     Erlang, Rust, Ruby, OCaml, Objective-C
 
 Système d'exploitation
-:   **Maitrise : **
+:   *Maitrise : *
     Linux (Debian, Arch, Ubuntu), OSX
 
-:   **Connaissance : **
+:   *Connaissance : *
     BSD
 
 Cloud
-:   **Virtualisation : **
+:   *Virtualisation : *
     VMware Server/ESX, Xen, KVM
 
-:   **Containeur : **
+:   *Containeur : *
     Docker, Kubernetes, Nomad, CoreOS, Openshift (v3)
 
-:   **Orchestrateur : **
+:   *Orchestrateur : *
     Cloudstack, Openstack
 
-:   **Outils : **
+:   *Outils : *
     Vagrant, Packer, Terraform, Ansible, Puppet, Fabric
 
 Langues
@@ -140,57 +140,57 @@ Open source
 ----------------
 
 Cloud
-:   **[bento](https://github.com/nlamirault/bento)**
+:   *[bento](https://github.com/nlamirault/bento)*
     Définition de box Vagrant utilisant Packer (Arch, Debian, CentOS, FreeBSD,
     OpenBSD, NetBSD)
 
-:   **[portefaix](https://github.com/portefaix)**
+:   *[portefaix](https://github.com/portefaix)*
     Des images Docker basées sur Alpine Linux et un POC pour créer son propre Cloud
     (Kubernetes, Openshift, Swarm, ...) basé sur Packer/Terraform.
 
-:   **[hyperion-xxx](https://github.com/portefaix)**
+:   *[hyperion-xxx](https://github.com/portefaix)*
     POC pour déployer Kubernetes, Rancher, Openshift, ... en utilisant Packer et
     Terraform sur les différents Cloud publics
 
 Divers
-:   **[abraracourcix](https://github.com/nlamirault/abraracourcix)** (Golang, gRPC) -
+:   *[abraracourcix](https://github.com/nlamirault/abraracourcix)* (Golang, gRPC) -
     Un générateur d'urls raccourcies simple supportant plusieurs backend de stockage
     (BoltDB, LevelDB, Redis, MongoDB, ...)
 
-:   **[aneto](https://github.com/nlamirault/aneto)** - (Golang) -
+:   *[aneto](https://github.com/nlamirault/aneto)* - (Golang) -
     Un outil de sauvegarde utilisant Amazon Glacier
 
-:   **[enigma](https://github.com/nlamirault/enigma)** - (Golang) -
+:   *[enigma](https://github.com/nlamirault/enigma)* - (Golang) -
     Un coffre fort dans le Cloud utilisant Amazon S3 et Amazon KMS
 
-:   **[chione](https://github.com/nlamirault/chione)** - (Golang) -
+:   *[chione](https://github.com/nlamirault/chione)* - (Golang) -
     CLI pour récupérer des informations sur les statison de ski (enneigment, pistes ouvertes, ...)
 
-:   **[pilotariak](https://github.com/pilotariak)** - (Golang, gRPC) -
+:   *[pilotariak](https://github.com/pilotariak)* - (Golang, gRPC) -
     Outillage pour récupérer des informations sur les évènements de pelote basque
 
 
 Automatisation
-:   **[scame](https://github.com/nlamirault/scame)** (une configuration clé en main d’Emacs),
-    **[miv](https://github.com/nlamirault/miv)** (une configuration personnelle pour Neovim),
-    **[divona](https://github.com/nlamirault/divona)** (Un outil de configuration de poste Linux
+:   *[scame](https://github.com/nlamirault/scame)* (une configuration clé en main d’Emacs),
+    *[miv](https://github.com/nlamirault/miv)* (une configuration personnelle pour Neovim),
+    *[divona](https://github.com/nlamirault/divona)* (Un outil de configuration de poste Linux
     ou de machine virtuelle basé sur Ansible. Compatible Archlinux, Debian, CentOS, FreeBSD,
     NetBSD, OpenBSD et OSX),
 
 Emacs
-:   **[gotest.el](https://github.com/nlamirault/gotest.el)** (un mode Emacs pour interagir avec
+:   *[gotest.el](https://github.com/nlamirault/gotest.el)* (un mode Emacs pour interagir avec
     les tests unitaires en Go)
-    **[phpunit.el](https://github.com/nlamirault/phpunit.el)** (un mode Emacs pour interagir avec
+    *[phpunit.el](https://github.com/nlamirault/phpunit.el)* (un mode Emacs pour interagir avec
     les tests unitaires PHPUnit)
-    **[sift.el](https://github.com/nlamirault/sift.el)**, **[ripgrel.el](https://github.com/nlamirault/ripgrep.el)**,
+    *[sift.el](https://github.com/nlamirault/sift.el)*, *[ripgrel.el](https://github.com/nlamirault/ripgrep.el)*,
     (interaction avec sift ou ripgrep, des alternatives à grep)
 
 IOT
 
-:   **[framboise](https://github.com/nlamirault/framboise)**(outils pour Raspberry PI),
-    **[jarvis](https://github.com/zeiot/jarvis)**(cluster Kubernetes sur RaspberryPI)
-    **[home-assistant](https://github.com/nlamirault/home-assistant-configuration)**(configuration domotique)
-    **[Docker ARM](https://github.com/zeiot)**(images Docker pour Rasperry PI 2/3: Prometheus, Domoticz, CoreDNS,
+:   *[framboise](https://github.com/nlamirault/framboise)* (outils pour Raspberry PI),
+    *[jarvis](https://github.com/zeiot/jarvis)* (cluster Kubernetes sur RaspberryPI)
+    *[home-assistant](https://github.com/nlamirault/home-assistant-configuration)* (configuration domotique)
+    *[Docker ARM](https://github.com/zeiot)* (images Docker pour Rasperry PI 2/3: Prometheus, Domoticz, CoreDNS,
     Prometheus exporters, Grafana, Nats, ...)
 
 ------
