@@ -1,4 +1,4 @@
-# Copyright (C) 2015, 2016, 2017 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# Copyright (C) 2014-2018 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ IMAGE = resume
 VERSION = 1.0
 
 HTML_IMAGE = nlamirault/resume:$(VERSION)
+EPUB_IMAGE = nlamirault/resume:$(VERSION)
 PDF_IMAGE = arachnysdocker/athenapdf:2.7.1
 
 STYLE=style.css
@@ -63,9 +64,26 @@ publish: ## Publish the Docker image
 html: ## Make the HTML version (lang=xx)
 	@echo -e "$(OK_COLOR)[$(APP)] Build HTML resume : ${lang}$(NO_COLOR)"
 	@$(DOCKER) run --rm=true \
-		-v `pwd`:/data/ \
-		-it --name resume-html $(HTML_IMAGE) \
-		pandoc --standalone --from markdown --to html -c $(STYLE) -o /data/resume-${lang}.html /data/$(SOURCE)-${lang}.md
+		-v `pwd`:/source/ \
+		-it --name resume-html jagregory/pandoc \
+		--standalone --from markdown --to html -c $(STYLE) -o /source/$(SOURCE)-${lang}.html /source/$(SOURCE)-${lang}.md
+
+.PHONY: epub
+epub: ## Make the ePUB version (lang=xx)
+	@echo -e "$(OK_COLOR)[$(APP)] Build ePUB resume : ${lang}$(NO_COLOR)"
+	@$(DOCKER) run --rm=true \
+		-v `pwd`:/source/ \
+		-it --name resume-epub jagregory/pandoc \
+		-f markdown -t epub --epub-cover-image generate.png -o /source/$(SOURCE)-${lang}.epub /source/$(SOURCE)-${lang}.md
+
+
+.PHONY: docx
+docx: ## Make the Docx version (lang=xx)
+	@echo -e "$(OK_COLOR)[$(APP)] Build Docx resume : ${lang}$(NO_COLOR)"
+	@$(DOCKER) run --rm=true \
+		-v `pwd`:/source/ \
+		-it --name resume-docx jagregory/pandoc \
+		-f markdown -t docx --reference-docx="reference.docx" -o /source/$(SOURCE)-${lang}.docx /source/$(SOURCE)-${lang}.md
 
 .PHONY: pdf
 pdf: html ## Make the PDF version (lang=xx)
