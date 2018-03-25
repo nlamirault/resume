@@ -1,7 +1,7 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014-2017 Nicolas Lamirault
+rights: © 2014-2018 Nicolas Lamirault
 ...
 
 ----
@@ -122,7 +122,8 @@ Cloud
     Cloudstack, Openstack
 
 :   *Outils : *
-    Vagrant, Packer, Terraform, Ansible, Puppet, Fabric
+    Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack
+
 
 Langues
 ---------
