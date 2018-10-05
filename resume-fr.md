@@ -7,7 +7,6 @@ rights: © 2014-2018 Nicolas Lamirault
 ----
 
 Ingénieur développement logiciel, spécialiste Open Source.
-
 ----
 
 
@@ -18,16 +17,18 @@ Expériences
 :   *DevOps Tools, Orange Applications for Business*
     Ingénieur expert
 
-    - API Gateway pour l'orchestrateur des Clouds internes (Golang, gRPC, Bazel)
+    - Collecte, centralisation et visualisation des infrastructures clients en provenance de plusieurs Cloud Providers (Openstack, AWS, Azure) (Python/Golang/Kubernetes)
+    - Outillage pour déployer des applications Cloud Natives (Kubernetes)
+    - API Gateway pour l'orchestrateur des Clouds internes (Golang, gRPC)
     - Intégration continue et déploiement par Kubernetes et GitlabCI
-    - Platforme Opentracing sur Kubernetes (OpenTracing Python et Golang) basée sur Jaeger
+    - Mise en place d'une gestion des traces applicatives sur Kubernetes (OpenTracing/Opencensus Python et Golang) basée sur Jaeger
     - Diffusion de messages basé sur Nats.io (Golang)
     - Exporteurs Prometheus des différents métriques des services REST (Python, Golang) et gRPC
     - Exporteur Prometheus des métriques de performances vSphere (Golang)
     - Supervision de containers (Golang)
 
 07/2014-10/2016
-:	*Infrastructure et Outils de Production, Orange Applications for Business*
+:   *Infrastructure et Outils de Production, Orange Applications for Business*
     Ingénieur développement logiciel
 
     - Remplacement de l'orchestrateur Cloudstack par un orchestrateur interne (Python, Flask, MariaDB)
@@ -36,7 +37,7 @@ Expériences
     - Refonte Packaging, Integration continue et tests (Golang, Docker)
 
 07/2012-07/2014
-:	*Cloud computing, Multimédia Business Services, Orange*
+:   *Cloud computing, Multimédia Business Services, Orange*
     Ingénieur devops dans le département Cloud Computing
 
     - Mise en place de l’intégration continue pour l’IAAS (Jenkins, Gitweb)
@@ -80,21 +81,21 @@ Education
 -------------
 
 1998-2000
-:	*Licence/Maitrise d’informatique*
-	[Université Bordeaux I, Talence](http://www.u-bordeaux1.fr)
+:   *Licence/Maitrise d’informatique*
+    [Université Bordeaux I, Talence](http://www.u-bordeaux1.fr)
 
 1996-1998
-: 	*DEUG MASS*
-	[Université Bordeaux II Victor Ségalen, Bordeaux](http://www.univ-bordeauxsegalen.fr/)
+:   *DEUG MASS*
+    [Université Bordeaux II Victor Ségalen, Bordeaux](http://www.univ-bordeauxsegalen.fr/)
 
 1996
-: 	*Baccalauréat Scientifique (mention bien)*
+:   *Baccalauréat Scientifique (mention bien)*
     Lycée Elire Faure, Lormont
 
 Comptétences
 ---------------
 
-Languages
+Languages de programmation
 :   *Utilisation courante(personnelle, professionnelle) : *
     Go, Python, Common Lisp
 
@@ -106,12 +107,19 @@ Languages
 
 Système d'exploitation
 :   *Maitrise : *
-    Linux (Debian, Arch, Ubuntu), OSX
+    Linux (Archlinux, Debian, Ubuntu), OSX
 
 :   *Connaissance : *
     BSD
 
-Cloud
+Méthodologies & Practiques
+:    **Organisation:**
+     Agile (Scrum, Kanban)
+
+:    **Développement**
+     TDD, eXtreme Programming, Design patterns
+
+Tools
 :   *Virtualisation : *
     VMware Server/ESX, Xen, KVM
 
@@ -122,20 +130,30 @@ Cloud
     Cloudstack, Openstack
 
 :   *Outils : *
-    Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack
+    Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack, Prometheus, Grafana
+
+:   *Base de données : *
+    MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
+
+:   *CI/CD : *
+    GitlabCI, Drone CI, Jenkins,
+
+:   *Autres : *
+    Git, Redis, Swagger, ...
+
 
 
 Langues
 ---------
 
 Français
-:	Natif
+:   Natif
 
 English
-:	Technique
+:   Technique
 
 Espagnol
-:	Notions
+:   Notions
 
 Open source
 ----------------
@@ -195,7 +213,7 @@ IOT
     Prometheus exporters, Grafana, Nats, ...)
 
 ------
-> <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br />
+> <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br /> Bordeaux <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
 > <a href="https://www.linkedin.com/in/nicolaslamirault" alt="Linkedin"><i class="fa fa-linkedin"></i> </a> •

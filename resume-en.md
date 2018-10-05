@@ -1,7 +1,7 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014-2017 Nicolas Lamirault
+rights: © 2014-2018 Nicolas Lamirault
 ...
 
 ----
@@ -14,16 +14,19 @@ Expériences
 --------------
 
 10/2016-.
-:    *DevOps Tools, Orange Application for Business*
-     Software Engineer
+:   *DevOps Tools, Orange Application for Business*
+    Software Engineer
 
-     - API Gateway for internale services (Golang, gRPC)
-     - Setting metrics in Cloud services (Opentracing Python and Golang, Jaeger)
-     - Messaging between services using Nats.io (Golang)
-     - Prometheus exporters for REST and gRPC services
-     - Prometheus exporter for vSphere (Golang)
-     - Deployment on Kubernetes
-     - Containers monitoring (Golang)
+    - Collecting, centralizing, and visualizing client infrastructures from multiple Cloud Providers (Openstack, AWS, Azure) (Python/Golang/Kubernetes)
+    - Tools for deploying Cloud Native Applications (Kubernetes)
+    - API Gateway for internale services (Golang, gRPC)
+    - Continuous Integration and Deployment using GitlabCI and Kubernetes
+    - Setting metrics in Cloud services (Opentracing Python and Golang, Jaeger)
+    - Messaging between services using Nats.io (Golang)
+    - Prometheus exporters for REST and gRPC services
+    - Prometheus exporter for vSphere (Golang)
+    - Deployment on Kubernetes
+    - Containers monitoring (Golang)
 
 07/2014-10/2016
 :    *Infrastructure and Production Tools, Orange Apps for Business, Orange*
@@ -92,7 +95,7 @@ Education
 Comptétences
 ---------------
 
-Languages
+Programming languages
 :    **Current use (personal, professional)**
      Python, Go, Common Lisp,
 
@@ -104,47 +107,39 @@ Languages
 
 Operating Systems
 :    **Daily**
-     Linux (Debian, Arch, Ubuntu), OSX
+     Linux (Archlinux, Debian, Ubuntu), OSX
 
 :    **Knowledge**
      BSD
 
-Methodology
+Methodologies & Practices
 :    **Organizational:**
-     Scrum, Kanban
+     Agile (Scrum, Kanban)
 
 :    **Development**
-     TDD, eXtreme Programming
+     TDD, eXtreme Programming, Design patterns
 
 Tools
-:    **Servers**
-     Apache, Nginx, Tomcat
+:   *Virtualisation : *
+    VMware Server/ESX, Xen, KVM
 
-:    **Database:**
-     MySQL, PostgreSQL, NoSQL (CouchDB, MongoDB)
+:   *Containeur : *
+    Docker, Kubernetes, Nomad, CoreOS, Openshift (v3)
 
-:    **Development**
-     Emacs, Intellij, Eclipse
+:   *Orchestrateur : *
+    Cloudstack, Openstack
 
-:    **Build:**
-     Ant, Gradle, Maven, PIP
+:   *Outils : *
+    Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack, Prometheus, Grafana
 
-:    **Versions managements systems:**
-     Git, Subversion, CVS
+:   *Base de données : *
+    MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
 
-Cloud
-:    **Virtualization:**
-     VMware Server / ESX, Xen, KVM
+:   *CI/CD : *
+    GitlabCI, Drone CI, Jenkins,
 
-:    **Container:**
-     Docker, Kubernetes, Nomad, Openshift Origin, CoreOS, Atomic
-
-:    **Orchestrator**
-     CloudStack, Openstack
-
-:    **Tools**
-     Vagrant, Packer, Terraform, Ansible, Puppet, Fabric
-
+:   *Autres : *
+    Git, Redis, Swagger, ...
 
 languages
 ---------
