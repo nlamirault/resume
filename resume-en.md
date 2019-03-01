@@ -55,7 +55,7 @@ Expériences
      - Development of SP TSM (Trusted Service Manager Service Provider)
      bank (certification PCI / DSS, Mastercard).
 
-09/2001-06/2011
+10/2001-06/2011
 :   *Developer, Multimedia Business Services, Orange*
      Project Department team provides packaged.
 
@@ -120,25 +120,25 @@ Methodologies & Practices
      TDD, eXtreme Programming, Design patterns
 
 Tools
-:   *Virtualisation : *
+:   *Virtualization : *
     VMware Server/ESX, Xen, KVM
 
-:   *Containeur : *
+:   *Container : *
     Docker, Kubernetes, Nomad, CoreOS, Openshift (v3)
 
-:   *Orchestrateur : *
+:   *Orchestrators : *
     Cloudstack, Openstack
 
-:   *Outils : *
+:   *Tools : *
     Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack, Prometheus, Grafana
 
-:   *Base de données : *
+:   *Databases : *
     MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
 
 :   *CI/CD : *
     GitlabCI, Drone CI, Jenkins,
 
-:   *Autres : *
+:   *Misc : *
     Git, Redis, Swagger, ...
 
 languages

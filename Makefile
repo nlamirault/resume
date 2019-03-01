@@ -23,7 +23,7 @@ VERSION = 1.0
 
 HTML_IMAGE = nlamirault/resume:$(VERSION)
 EPUB_IMAGE = nlamirault/resume:$(VERSION)
-PDF_IMAGE = arachnysdocker/athenapdf:2.7.1
+PDF_IMAGE = arachnysdocker/athenapdf:2.14.0
 
 STYLE=style.css
 SOURCE=resume

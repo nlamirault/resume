@@ -46,7 +46,7 @@ Expériences
     - Automatisation d'un environnement de développement et build commun (VirtualBox, Vagrant, Ansible)
 
 06/2011-07/2012
-:   *Développement NFC, Multimédia Business Services, Orange*
+:   *Equipe NFC, Multimédia Business Services, Orange*
     Développeur dans le département NFC
 
     - Service de contrôle d’accès NFC par mobiles NFC Service Center (IHM
@@ -55,8 +55,8 @@ Expériences
     - Développement sur TSM SP (Trusted Service Manager Service Provider)
     bancaire (certification PCI/DSS, Mastercard).
 
-09/2001-06/2011
-:   *Développeur, Multimédia Business Services, Orange*
+10/2001-06/2011
+:   *Département Développement, Multimédia Business Services, Orange*
     Département projet et équipe offre packagées.
 
     - Développement d’applications SMS/MMS pour le compte d’Orange, sociétés
@@ -171,10 +171,27 @@ Cloud
     POC pour déployer Kubernetes, Rancher, Openshift, ... en utilisant Packer et
     Terraform sur les différents Cloud publics
 
+:   *[zeiot](https://github.com/zeiot)*
+    Images Docker pour ARM v7/v8: Prometheus, Domoticz, CoreDNS, Prometheus exporters, Grafana, Nats, ...)
+
+
+Automatisation
+:   *[divona](https://github.com/nlamirault/divona)*
+    Un outil de configuration de poste Linux ou de machine virtuelle basé sur Ansible. Compatible Archlinux, Debian, CentOS,FreeBSD, NetBSD, OpenBSD et OSX
+
+    *[galactus](https://github.com/nlamirault/galactus)*
+    Terraformisation des projets (Github, Gitlab, ...)
+
+   *[scame](https://github.com/nlamirault/scame)*
+    Une configuration clé en main d’Emacs
+
+    *[miv](https://github.com/nlamirault/miv)*
+    Une configuration personnelle pour Neovim
+
+
 Divers
 :   *[abraracourcix](https://github.com/nlamirault/abraracourcix)* (Golang, gRPC) -
-    Un générateur d'urls raccourcies simple supportant plusieurs backend de stockage
-    (BoltDB, LevelDB, Redis, MongoDB, ...)
+    Un générateur d'urls raccourcies simple supportant plusieurs backend de stockage (BoltDB, LevelDB, Redis, MongoDB, ...)
 
 :   *[aneto](https://github.com/nlamirault/aneto)* - (Golang) -
     Un outil de sauvegarde utilisant Amazon Glacier
@@ -183,34 +200,25 @@ Divers
     Un coffre fort dans le Cloud utilisant Amazon S3 et Amazon KMS
 
 :   *[chione](https://github.com/nlamirault/chione)* - (Golang) -
-    CLI pour récupérer des informations sur les statison de ski (enneigment, pistes ouvertes, ...)
+    CLI pour récupérer des informations sur les stations de ski (enneigment, pistes ouvertes, ...)
 
 :   *[pilotariak](https://github.com/pilotariak)* - (Golang, gRPC) -
     Outillage pour récupérer des informations sur les évènements de pelote basque
 
-
-Automatisation
-:   *[scame](https://github.com/nlamirault/scame)* (une configuration clé en main d’Emacs),
-    *[miv](https://github.com/nlamirault/miv)* (une configuration personnelle pour Neovim),
-    *[divona](https://github.com/nlamirault/divona)* (Un outil de configuration de poste Linux
-    ou de machine virtuelle basé sur Ansible. Compatible Archlinux, Debian, CentOS, FreeBSD,
-    NetBSD, OpenBSD et OSX),
-
 Emacs
-:   *[gotest.el](https://github.com/nlamirault/gotest.el)* (un mode Emacs pour interagir avec
-    les tests unitaires en Go)
-    *[phpunit.el](https://github.com/nlamirault/phpunit.el)* (un mode Emacs pour interagir avec
-    les tests unitaires PHPUnit)
+:   *[gotest.el](https://github.com/nlamirault/gotest.el)*
+    Un mode Emacs pour interagir avec les tests unitaires en Go
+
+    *[phpunit.el](https://github.com/nlamirault/phpunit.el)*
+    un mode Emacs pour interagir avec les tests unitaires PHPUnit
     *[sift.el](https://github.com/nlamirault/sift.el)*, *[ripgrel.el](https://github.com/nlamirault/ripgrep.el)*,
-    (interaction avec sift ou ripgrep, des alternatives à grep)
+    Interaction avec sift ou ripgrep, des alternatives à grep
 
 IOT
 
 :   *[framboise](https://github.com/nlamirault/framboise)* (outils pour Raspberry PI),
     *[jarvis](https://github.com/zeiot/jarvis)* (cluster Kubernetes sur RaspberryPI)
     *[home-assistant](https://github.com/nlamirault/home-assistant-configuration)* (configuration domotique)
-    *[Docker ARM](https://github.com/zeiot)* (images Docker pour Rasperry PI 2/3: Prometheus, Domoticz, CoreDNS,
-    Prometheus exporters, Grafana, Nats, ...)
 
 ------
 > <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br /> Bordeaux <br />
