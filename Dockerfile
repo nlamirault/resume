@@ -1,4 +1,4 @@
-# Copyright (C) 2014-2018 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# Copyright (C) 2014-2020 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -35,7 +35,7 @@
 
 # VOLUME ["/data/"]
 
-FROM arachnysdocker/athenapdf:2.1
+FROM arachnysdocker/athenapdf:2.16.0
 MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 RUN apt-get update && \

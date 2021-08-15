@@ -1,19 +1,28 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014-2018 Nicolas Lamirault
+rights: © 2014-2021 Nicolas Lamirault
 ...
 
 ----
 
-Ingénieur développement logiciel, spécialiste Open Source.
-----
-
+[https://nicolas.lamirault.xyz](https://nicolas.lamirault.xyz)
 
 Expériences
 --------------
 
-10/2016-.
+03/2019-.
+:   *Skale-5*
+    Consultant Cloud / SRE
+
+    - Harmoniser et unifier les processus CI / CD existants (GitlabCI)
+    - Stack de Monitoring basé sur Kubernetes (GKE, EKS, AKS, ACK): Prometheus Operator, Prometheus, Thanos, Loki, Prometheus Exporters et Grafana.
+    - Configuration sur mesure des manifestes Kustomize utilisés par Skale-5
+    - Gérez les plates-formes GCP et AWS à l'aide de Terraform, Ansible, Packer, ...
+    - Utilisation de CookieCutter pour templatiser le bootstrap de projets GCP, AWS, ...
+    - Tests d'infrastructures par Inspec
+
+10/2016-03/2019
 :   *DevOps Tools, Orange Applications for Business*
     Ingénieur expert
 
@@ -76,7 +85,6 @@ Expériences
     - Mise en place de batterie de tests unitaire et d’intégration
     - Implémentation d’outils de gestion de projets sous Unix.
 
-
 Education
 -------------
 
@@ -92,56 +100,81 @@ Education
 :   *Baccalauréat Scientifique (mention bien)*
     Lycée Elire Faure, Lormont
 
+Certifications
+---------------
+
+2021
+:   *Google Associate Cloud Engineer*
+    [GCP-CA](https://www.credential.net/c041d499-93e8-45ad-ba20-a009be2fcae9#gs.rdwcwu/public_url)
+
+2021
+:   *Terraform Associate*
+    [HC-TA](https://www.youracclaim.com/badges/77499f0d-d149-4941-9c1c-03e01b837bf5/public_url)
+
+2021
+:   *Azure Fundamentals*
+    [AZ-900](https://www.youracclaim.com/badges/77499f0d-d149-4941-9c1c-03e01b837bf5/public_url)
+
+2020
+:   *Certified Kubernetes Administrator*
+    [CKA](https://www.youracclaim.com/badges/f6acd9c5-89b7-43e9-928c-dbaa9dcd9e9c/public_url)
+
 Comptétences
 ---------------
 
+Cloud
+:   *Provider*
+    GCP, AWS, Azure, Alicloud, Scaleway, Exoscale
+
+:   *Containeur*
+    Kubernetes, Nomad, CoreOS, Openshift (v3)
+
 Languages de programmation
-:   *Utilisation courante(personnelle, professionnelle) : *
+:   *Utilisation courante (personnelle, professionnelle)*
     Go, Python, Common Lisp
 
-:   *Utilisation professionnelle : *
+:   *Utilisation professionnelle*
     PHP, Java
 
-:   **Connaissance : **
+:   *Connaissance*
     Erlang, Rust, Ruby, OCaml, Objective-C
 
 Système d'exploitation
-:   *Maitrise : *
+:   *Maitrise*
     Linux (Archlinux, Debian, Ubuntu), OSX
 
-:   *Connaissance : *
+:   *Connaissance*
     BSD
 
 Méthodologies & Practiques
-:    **Organisation:**
+
+:    *Organisation*
      Agile (Scrum, Kanban)
 
-:    **Développement**
+:    *Développement*
      TDD, eXtreme Programming, Design patterns
 
 Tools
-:   *Virtualisation : *
+:   *Cloud Public*
+    GCP, AWS, Azure, Alicloud
+
+:   *Virtualisation*
     VMware Server/ESX, Xen, KVM
 
-:   *Containeur : *
-    Docker, Kubernetes, Nomad, CoreOS, Openshift (v3)
-
-:   *Orchestrateur : *
+:   *Orchestrateur*
     Cloudstack, Openstack
 
-:   *Outils : *
+:   *Outils*
     Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack, Prometheus, Grafana
 
-:   *Base de données : *
-    MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
+:   *Base de données*
+    MySQL, PostgreSQL, InfluxDB, NewSQL (CockroachDB)
 
-:   *CI/CD : *
-    GitlabCI, Drone CI, Jenkins,
+:   *CI/CD*
+    Github Actions, GitlabCI, FluxCD v2, ...
 
-:   *Autres : *
+:   *Autres*
     Git, Redis, Swagger, ...
-
-
 
 Langues
 ---------
@@ -159,35 +192,47 @@ Open source
 ----------------
 
 Cloud
-:   *[bento](https://github.com/nlamirault/bento)*
+:   *[portefaix](https://github.com/portefaix)* -
+    Création d'une infrastructure sur les fournisseurs de Cloud public et déploiement d'applications Cloud Native dans un cluster Kubernetes
+
+:   *[portefaix-hub](https://github.com/portefaix-hub)* -
+    Charts Helm pour le projet Portefaix déployé sur [Artifactory Hub](https://artifacthub.io/packages/search?page=1&repo=portefaix-hub)
+
+:   *[portefaix-policies](https://github.com/portefaix-policies)* -
+    Règles [Open Policy Agent](https://www.openpolicyagent.org/) et [Kyverno](https://kyverno.io/) pour le projet Portefaix
+
+:   *[portefaix-inspec-gcp](https://github.com/portefaix/portefaix-inspec-gcp)*, *[portefaix-inspec-aws](https://github.com/portefaix/portefaix-inspec-aws)*, *[portefaix-inspec-azure](https://github.com/portefaix/portefaix-inspec-azure)* -
+    Profiles [Inspec](https://inspec.io) pour des tests d'infrastructures
+
+:   *[Terraform Registry](https://registry.terraform.io/namespaces/nlamirault)* -
+    Modules et providers Terraform
+
+:   *[monitoring-mixins](https://github.com/nlamirault/monitoring-mixins)* -
+    Collection of reusable and configurable Prometheus alerts, and Grafana dashboards.
+
+:   *[bento](https://github.com/nlamirault/bento)* -
     Définition de box Vagrant utilisant Packer (Arch, Debian, CentOS, FreeBSD,
     OpenBSD, NetBSD)
 
-:   *[portefaix](https://github.com/portefaix)*
-    Des images Docker basées sur Alpine Linux et un POC pour créer son propre Cloud
-    (Kubernetes, Openshift, Swarm, ...) basé sur Packer/Terraform.
-
-:   *[hyperion-xxx](https://github.com/portefaix)*
+:   *[ploio](https://github.com/ploio)* -
     POC pour déployer Kubernetes, Rancher, Openshift, ... en utilisant Packer et
     Terraform sur les différents Cloud publics
 
-:   *[zeiot](https://github.com/zeiot)*
+:   *[zeiot](https://github.com/zeiot)* -
     Images Docker pour ARM v7/v8: Prometheus, Domoticz, CoreDNS, Prometheus exporters, Grafana, Nats, ...)
 
-
 Automatisation
-:   *[divona](https://github.com/nlamirault/divona)*
+:   *[divona](https://github.com/nlamirault/divona)* -
     Un outil de configuration de poste Linux ou de machine virtuelle basé sur Ansible. Compatible Archlinux, Debian, CentOS,FreeBSD, NetBSD, OpenBSD et OSX
 
-    *[galactus](https://github.com/nlamirault/galactus)*
+:   *[galactus](https://github.com/nlamirault/galactus)* -
     Terraformisation des projets (Github, Gitlab, ...)
 
-   *[scame](https://github.com/nlamirault/scame)*
+:   *[scame](https://github.com/nlamirault/scame)* -
     Une configuration clé en main d’Emacs
 
-    *[miv](https://github.com/nlamirault/miv)*
+:   *[miv](https://github.com/nlamirault/miv)* -
     Une configuration personnelle pour Neovim
-
 
 Divers
 :   *[abraracourcix](https://github.com/nlamirault/abraracourcix)* (Golang, gRPC) -
@@ -211,8 +256,9 @@ Emacs
 
     *[phpunit.el](https://github.com/nlamirault/phpunit.el)*
     un mode Emacs pour interagir avec les tests unitaires PHPUnit
+
     *[sift.el](https://github.com/nlamirault/sift.el)*, *[ripgrel.el](https://github.com/nlamirault/ripgrep.el)*,
-    Interaction avec sift ou ripgrep, des alternatives à grep
+    Interaction avec Sift ou Ripgrep, des alternatives à grep
 
 IOT
 
@@ -221,7 +267,7 @@ IOT
     *[home-assistant](https://github.com/nlamirault/home-assistant-configuration)* (configuration domotique)
 
 ------
-> <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br /> Bordeaux <br />
+> <nicolas.lamirault@gmail.com> <br /> +33 7 61 44 32 35 <br /> Bordeaux <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
 > <a href="https://www.linkedin.com/in/nicolaslamirault" alt="Linkedin"><i class="fa fa-linkedin"></i> </a> •

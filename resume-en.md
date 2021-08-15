@@ -1,19 +1,29 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014-2018 Nicolas Lamirault
+rights: © 2014-2021 Nicolas Lamirault
 ...
 
 ----
 
-Software Engineer, Open Source specialist.
-
-----
+[https://nicolas.lamirault.xyz](https://nicolas.lamirault.xyz)
 
 Expériences
 --------------
 
-10/2016-.
+03/2019-.
+:   *Skale-5*
+    Cloud Consultant / SRE
+
+    - Harmonize and unify existing CI/CD processes
+    - Monitoring stack based on Kubernetes (GKE, EKS, AKS, ACK): Prometheus Operator,
+    Prometheus, Thanos, Exporters and Grafana.
+    - Bespoke configuration of Kustomize manifests used by Skale-5
+    - Manage GCP and AWS platforms using Terraform, Ansible, Packer, ...
+    - Project templates with Cookiecutter
+    - Infrastructure tests using Inspec
+
+10/2016-03/2019
 :   *DevOps Tools, Orange Application for Business*
     Software Engineer
 
@@ -76,157 +86,193 @@ Expériences
      - Implementation of unit tests and integration battery
      - Implementation of project management tools on Unix.
 
-
 Education
 -------------
 
 1998-2000
 :    *Degree / Master of Computer*
-     [University of Bordeaux I, Talence] (http://www.u-bordeaux1.fr)
+     [University of Bordeaux I, Talence](http://www.u-bordeaux1.fr)
 
 1996-1998
 :    *DEUG MASS*
-     [Victor Segalen Bordeaux II University, Bordeaux] (http://www.univ-bordeauxsegalen.fr/)
+     [Victor Segalen Bordeaux II University, Bordeaux](http://www.univ-bordeauxsegalen.fr/)
 
 1996
 :    *Bachelor of Science (honors)*
      High School Elie Faure, Lormont
 
+Certifications
+---------------
+
+2021
+:   *Google Associate Cloud Engineer*
+    [GCP-CA](https://www.credential.net/c041d499-93e8-45ad-ba20-a009be2fcae9#gs.rdwcwu/public_url)
+
+2021
+:   *Terraform Associate*
+    [HC-TA](https://www.youracclaim.com/badges/77499f0d-d149-4941-9c1c-03e01b837bf5/public_url)
+
+2021
+:   *Azure Fundamentals*
+    [AZ-900](https://www.youracclaim.com/badges/77499f0d-d149-4941-9c1c-03e01b837bf5/public_url)
+
+2020
+:   *Certified Kubernetes Administrator*
+    [CKA](https://www.youracclaim.com/badges/f6acd9c5-89b7-43e9-928c-dbaa9dcd9e9c/public_url)
+
 Comptétences
 ---------------
 
+Cloud
+:   *Provider*
+    GCP, AWS, Azure, Alicloud, Scaleway, Exoscale
+
+:   *Containers*
+    Kubernetes, Nomad, CoreOS, Openshift (v3)
+
 Programming languages
-:    **Current use (personal, professional)**
-     Python, Go, Common Lisp,
+:   *Current use (personal, professional)*
+    Go, Python, Common Lisp,
 
-:    **Use only in work**
-     Java, PHP,
+:   *Use only in work*
+    Java, PHP,
 
-:    **Knowledge**
-     Erlang, Rust, Ruby, OCaml, Objective-C
+:   *Knowledge*
+    Erlang, Rust, Ruby, OCaml, Objective-C
 
 Operating Systems
-:    **Daily**
-     Linux (Archlinux, Debian, Ubuntu), OSX
+:   *Daily*
+    Linux (Archlinux, Debian, Ubuntu), OSX
 
-:    **Knowledge**
-     BSD
+:   *Knowledge*
+    BSD
 
 Methodologies & Practices
-:    **Organizational:**
-     Agile (Scrum, Kanban)
+:   *Organizational:*
+    Agile (Scrum, Kanban)
 
-:    **Development**
-     TDD, eXtreme Programming, Design patterns
+:   *Development*
+    TDD, eXtreme Programming, Design patterns
 
 Tools
-:   *Virtualization : *
+:   *Virtualization*
     VMware Server/ESX, Xen, KVM
 
-:   *Container : *
+:   *Container*
     Docker, Kubernetes, Nomad, CoreOS, Openshift (v3)
 
-:   *Orchestrators : *
+:   *Orchestrators*
     Cloudstack, Openstack
 
-:   *Tools : *
+:   *Tools*
     Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack, Prometheus, Grafana
 
-:   *Databases : *
+:   *Databases*
     MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
 
-:   *CI/CD : *
+:   *CI/CD*
     GitlabCI, Drone CI, Jenkins,
 
-:   *Misc : *
+:   *Misc*
     Git, Redis, Swagger, ...
 
 languages
 ---------
 
 French
-: Native
+:   Native
 
 English
-Technique
+:   Technic
 
 Spanish
-: Basic
+:   Basic
 
 Open source
 ----------------
 
 Cloud
-:   **bento : **
+:   *[portefaix](https://github.com/portefaix)* -
+    Building an infrastructure on public cloud providers and deploying Cloud Native applications in a Kubernetes cluster
+
+:   *[portefaix-hub](https://github.com/portefaix-hub)* -
+    Charts Helm for the Portefaix project deployed on [Artifactory Hub](https://artifacthub.io/packages/search?page=1&repo=portefaix-hub)
+
+:   *[portefaix-policies](https://github.com/portefaix-policies)* -
+    [Open Policy Agent](https://www.openpolicyagent.org/) and [Kyverno](https://kyverno.io/) rules for the Portefaix project
+
+:   *[portefaix-inspec-gcp](https://github.com/portefaix/portefaix-inspec-gcp)*, *[portefaix-inspec-aws](https://github.com/portefaix/portefaix-inspec -aws)*, *[portefaix-inspec-azure](https://github.com/portefaix/portefaix-inspec-azure)* -
+    [Inspec](https://inspec.io) profiles for infrastructure tests
+
+:   *[Terraform Registry](https://registry.terraform.io/namespaces/nlamirault)* -
+    Terraform modules and providers
+
+:   *[monitoring-mixins](https://github.com/nlamirault/monitoring-mixins)* -
+    Collection of reusable and configurable Prometheus alerts, and Grafana dashboards.
+
+:   *[bento](https://github.com/nlamirault/bento)* -
     Some Vagrant baseboxes made using Packer (Archlinux, Debian, CentOS,
     FreeBSD, OpenBSD, NetBSD)
 
-:   **hyperion-xxx : **
+:   *[ploio](https://github.com/ploio)* -
     Setup your own Kubernetes, Swarm, Nomad, Rancher or Openshift Origin cluster
     using Terraform and Packer and deploy it on public Cloud provider (AWS,
     Google Compute Engine, Digital Ocean, ...)
 
-:   **helmsman : ** [Github](https://github.com/nlamirault/helmsman)
+:   *[zeiot](https://github.com/zeiot)* -
+    Docker images for ARM v7/v8: Prometheus, Domoticz, CoreDNS, Prometheus exporters, Grafana, Nats, ...)
+
+:   *[helmsman](https://github.com/nlamirault/helmsman)*
     Text User Interface for Kubernetes
 
-:   **portefaix : **
-    Containerized app system based on Docker and Alpine Linux
-    (Elasticsearch, Kibana, Grafana, InfluxDB, Vault, ...)
+Automating
+:   *[divona](https://github.com/nlamirault/divona)* -
+    A Linux station or virtual machine configuration tool based on Ansible. Compatible with Archlinux, Debian, CentOS, FreeBSD, NetBSD, OpenBSD and OSX
 
-Tools
+:   *[galactus](https://github.com/nlamirault/galactus)* -
+    Terraformization of projects (Github, Gitlab, ...)
 
-:   **divona : **
-    Setup environment configuration for Linux using Ansible. Support Linux
-    (Archlinux, Debian, CentOs), BSD (FreeBSD, OpenBSD, NetBSD) and OSX.
+:   *[scame](https://github.com/nlamirault/scame)* -
+    A turnkey configuration of Emacs
 
-:   **aneto : **
+:   *[miv](https://github.com/nlamirault/miv)* -
+    A personal configuration for Neovim
+
+Various
+:   *[abraracourcix](https://github.com/nlamirault/abraracourcix)* (Golang, gRPC) -
+    A simple shortened url generator supporting several storage backends (BoltDB, LevelDB, Redis, MongoDB, ...)
+
+:   *[aneto](https://github.com/nlamirault/aneto)* - (Golang) -
     A backup tool using Amazon Glacier
 
-:   **enigma : **
-    A safe using Amazon S3 and Amazon KMS
+:   *[enigma](https://github.com/nlamirault/enigma)* - (Golang) -
+    A cloud vault using Amazon S3 and Amazon KMS
 
-:   **abraracourcix : **
-    A simple URL Shortener with multiple backend
-    (BoltDB, LevelDB, Redis, MongoDB, ...)
+:   *[chione](https://github.com/nlamirault/chione)* - (Golang) -
+    CLI to retrieve information on ski resorts (snow cover, open slopes, ...)
 
-:   **skybox : **
-    Collecting metrics from a box provider and exporting data
-
-:   **chione : ** [Github](https://github.com/nlamirault/chione) - (Golang) -
-    CLI to retrive ski resorts informations
-
-:   **pilotariak : ** [Github](https://github.com/pilotariak) - (Golang, gRPC) -
-    Some utilities for Pelota informations
+:   *[pilotariak](https://github.com/pilotariak)* - (Golang, gRPC) -
+    Tools to retrieve information on Basque pelota events
 
 Emacs
-:   **scame : **
-    An Emacs configuration
+:   *[gotest.el](https://github.com/nlamirault/gotest.el)*
+    An Emacs mode to interact with unit tests in Go
 
-:   **gotest.el : **
-    Emacs mode to go unit test command line tool
+    *[phpunit.el](https://github.com/nlamirault/phpunit.el)*
+    an Emacs mode to interact with PHPUnit unit tests
 
-:   **phpunit.el : **
-    Emacs mode to phpunit and test command line tool
-
-:   **sift.el : **
-    A front-end for sift, a fast and powerful alternative to grep.
+    *[sift.el](https://github.com/nlamirault/sift.el)*, *[ripgrel.el](https://github.com/nlamirault/ripgrep.el)*,
+    Interaction with Sift or Ripgrep, alternatives to grep
 
 IOT
-:   **framboise : **
-    Raspberry PI 2 tools
 
-:   **jarvis : **
-    Open source experiments in the domotic
-
-:   **zeiot : ** [Github](https://github.com/zeiot)
-    Docker images for Rasperry PI 2 and 3: Prometheus, Domoticz, CoreDNS, Prometheus exporters (node, pihole, nats, ...), Grafana, Nats, ...
-
+:   *[raspberry](https://github.com/nlamirault/framboise)* (tools for Raspberry PI),
+    *[jarvis](https://github.com/zeiot/jarvis)* (Kubernetes cluster on RaspberryPI)
+    *[home-assistant](https://github.com/nlamirault/home-assistant-configuration)* (home automation configuration)
 
 ------
-> <nicolas.lamirault@gmail.com> <br /> +33 7 84 12 76 65 <br />
+> <nicolas.lamirault@gmail.com> <br /> +33 7 61 44 32 35 <br /> Bordeaux <br />
 > <a href="https://github.com/nlamirault" alt="Github"><i class="fa fa-github"></i></a> •
 > <a href="https://twitter.com/nlamirault" alt="Twitter"><i class="fa fa-twitter"></i> </a> •
-> <a href="https://plus.google.com/+nicolaslamirault" alt="Google Plus"><i class="fa fa-google-plus"></i> </a>  •
-> <a href="http://www.linkedin.com/in/nicolaslamirault" alt="Linkedin"><i class="fa fa-linkedin"></i> </a> •
-> <a href="https://www.facebook.com/nicolas.lamirault" alt="Facebook"><i class="fa fa-facebook"></i> </a> <br />
-> <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x5F99269A6FCA437C"> PGP Key </a>
+> <a href="https://www.linkedin.com/in/nicolaslamirault" alt="Linkedin"><i class="fa fa-linkedin"></i> </a> •
+> <a href="https://keybase.io/nlamirault"><i class="fa fa-key"></i></a>

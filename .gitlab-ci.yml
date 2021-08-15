@@ -1,4 +1,4 @@
-# Copyright (C) 2015, 2016, 2017 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# Copyright (C) 2014-2020 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ variables:
   DOCKER_DRIVER: overlay
   STYLE: style.css
   SOURCE: resume
-  PDF_IMAGE: arachnysdocker/athenapdf:2.7.1
+  PDF_IMAGE: arachnysdocker/athenapdf:2.16.0
 
 before_script:
   - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
