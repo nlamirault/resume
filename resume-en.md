@@ -16,8 +16,8 @@ Expériences
     Cloud Consultant / SRE
 
     - Harmonize and unify existing CI/CD processes
-    - Monitoring stack based on Kubernetes (GKE, EKS, AKS, ACK): Prometheus Operator,
-    Prometheus, Thanos, Exporters and Grafana.
+    - Monitoring stack based on Kubernetes (GKE, EKS, AKS, ACK): Prometheus Operator, Prometheus, Thanos, Exporters and Grafana.
+    - Logging: ELK/EFK, Loki, Stackdriver
     - Bespoke configuration of Kustomize manifests used by Skale-5
     - Manage GCP and AWS platforms using Terraform, Ansible, Packer, ...
     - Project templates with Cookiecutter
