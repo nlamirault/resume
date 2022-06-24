@@ -21,6 +21,7 @@ Expériences
     - Gérez les plates-formes GCP et AWS à l'aide de Terraform, Ansible, Packer, ...
     - Utilisation de CookieCutter pour templatiser le bootstrap de projets GCP, AWS, ...
     - Tests d'infrastructures par Inspec
+    - Pratiques DevOps : SRE, astreinte, gestion des incidents, documentation pratique, et bien d'autres encore
 
 10/2016-03/2019
 :   *DevOps Tools, Orange Applications for Business*

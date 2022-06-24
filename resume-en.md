@@ -22,6 +22,7 @@ Expériences
     - Manage GCP and AWS platforms using Terraform, Ansible, Packer, ...
     - Project templates with Cookiecutter
     - Infrastructure tests using Inspec
+    - DevOps practices: SRE, on-call, incident-management, hands-on documentation, and many more;
 
 10/2016-03/2019
 :   *DevOps Tools, Orange Application for Business*
