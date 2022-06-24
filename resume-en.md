@@ -1,7 +1,7 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014-2021 Nicolas Lamirault
+rights: © 2014-2022 Nicolas Lamirault
 ...
 
 ----
@@ -128,7 +128,7 @@ Cloud
     GCP, AWS, Azure, Alicloud, Scaleway, Exoscale
 
 :   *Containers*
-    Kubernetes, Nomad, CoreOS, Openshift (v3)
+    Kubernetes, Nomad, Docker
 
 Programming languages
 :   *Current use (personal, professional)*
@@ -155,28 +155,34 @@ Methodologies & Practices
     TDD, eXtreme Programming, Design patterns
 
 Tools
-:   *Virtualization*
-    VMware Server/ESX, Xen, KVM
-
 :   *Container*
-    Docker, Kubernetes, Nomad, CoreOS, Openshift (v3)
+    Kubernetes, Docker, Nomad, 
 
 :   *Orchestrators*
     Cloudstack, Openstack
 
-:   *Tools*
-    Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack, Prometheus, Grafana
+:   *Cloud*
+    Terraform, Packer, Ansible, Vagrant, Puppet, Salt Stack
+
+:   *Observability*
+    Prometheus, Thanos, Mimir, AlertManager, Grafana, Loki, Tempo, Jaeger, EFK
+
+:   *ChaosEngineering*
+    LitmusChaos, ChaosMesh
+
+:   *Gitops*
+    Argo (Cd, Rollouts, Workflow, Events), Flux v2
+
+:   *ServiceMesh*
+    Istio, OpenServiceMesh
 
 :   *Databases*
     MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
 
 :   *CI/CD*
-    GitlabCI, Drone CI, Jenkins,
+    Github Actions, GitlabCI, Tekton, Jenkins-X,
 
-:   *Misc*
-    Git, Redis, Swagger, ...
-
-languages
+Languages
 ---------
 
 French

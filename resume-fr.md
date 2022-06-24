@@ -126,55 +126,60 @@ Cloud
 :   *Provider*
     GCP, AWS, Azure, Alicloud, Scaleway, Exoscale
 
-:   *Containeur*
-    Kubernetes, Nomad, CoreOS, Openshift (v3)
+:   *Containers*
+    Kubernetes, Nomad, Docker
 
-Languages de programmation
-:   *Utilisation courante (personnelle, professionnelle)*
-    Go, Python, Common Lisp
+Programming languages
+:   *Current use (personal, professional)*
+    Go, Python, Common Lisp,
 
-:   *Utilisation professionnelle*
-    PHP, Java
+:   *Use only in work*
+    Java, PHP,
 
-:   *Connaissance*
+:   *Knowledge*
     Erlang, Rust, Ruby, OCaml, Objective-C
 
-Système d'exploitation
-:   *Maitrise*
+Operating Systems
+:   *Daily*
     Linux (Archlinux, Debian, Ubuntu), OSX
 
-:   *Connaissance*
+:   *Knowledge*
     BSD
 
-Méthodologies & Practiques
+Methodologies & Practices
+:   *Organizational:*
+    Agile (Scrum, Kanban)
 
-:    *Organisation*
-     Agile (Scrum, Kanban)
-
-:    *Développement*
-     TDD, eXtreme Programming, Design patterns
+:   *Development*
+    TDD, eXtreme Programming, Design patterns
 
 Tools
-:   *Cloud Public*
-    GCP, AWS, Azure, Alicloud
+:   *Container*
+    Kubernetes, Docker, Nomad, 
 
-:   *Virtualisation*
-    VMware Server/ESX, Xen, KVM
-
-:   *Orchestrateur*
+:   *Orchestrators*
     Cloudstack, Openstack
 
-:   *Outils*
-    Vagrant, Packer, Terraform, Ansible, Puppet, Salt Stack, Prometheus, Grafana
+:   *Cloud*
+    Terraform, Packer, Ansible, Vagrant, Puppet, Salt Stack
 
-:   *Base de données*
-    MySQL, PostgreSQL, InfluxDB, NewSQL (CockroachDB)
+:   *Observability*
+    Prometheus, Thanos, Mimir, AlertManager, Grafana, Loki, Tempo, Jaeger, EFK
+
+:   *ChaosEngineering*
+    LitmusChaos, ChaosMesh
+
+:   *Gitops*
+    Argo (Cd, Rollouts, Workflow, Events), Flux v2
+
+:   *ServiceMesh*
+    Istio, OpenServiceMesh
+
+:   *Databases*
+    MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
 
 :   *CI/CD*
-    Github Actions, GitlabCI, FluxCD v2, ...
-
-:   *Autres*
-    Git, Redis, Swagger, ...
+    Github Actions, GitlabCI, Tekton, Jenkins-X,
 
 Langues
 ---------

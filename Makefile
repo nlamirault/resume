@@ -9,7 +9,7 @@
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
+# See the License for the specific COUNTRYuage governing permissions and
 # limitations under the License.
 
 SHELL = /bin/bash
@@ -82,44 +82,44 @@ publish: ## Publish the Docker image
 	@$(DOCKER) push $(NAMESPACE)/$(IMAGE):$(VERSION)
 
 .PHONY: html
-html: guard-LANG ## Make the HTML version (lang=xx)
-	@echo -e "$(OK_COLOR)[$(APP)] Build HTML resume : $(LANG)$(NO_COLOR)"
+html: guard-COUNTRY ## Make the HTML version (COUNTRY=xx)
+	@echo -e "$(OK_COLOR)[$(APP)] Build HTML resume : $(COUNTRY)$(NO_COLOR)"
 	@$(DOCKER) run --rm=true \
 		-v `pwd`:/source/ \
 		-it --name resume-html jagregory/pandoc \
-		--standalone --from markdown --to html -c $(STYLE) -o /source/$(SOURCE)-$(LANG).html /source/$(SOURCE)-$(LANG).md
+		--standalone --from markdown --to html -c $(STYLE) -o /source/$(SOURCE)-$(COUNTRY).html /source/$(SOURCE)-$(COUNTRY).md
 
 .PHONY: epub
-epub: guard-LANG ## Make the ePUB version (lang=xx)
-	@echo -e "$(OK_COLOR)[$(APP)] Build ePUB resume : $(LANG)$(NO_COLOR)"
+epub: guard-COUNTRY ## Make the ePUB version (COUNTRY=xx)
+	@echo -e "$(OK_COLOR)[$(APP)] Build ePUB resume : $(COUNTRY)$(NO_COLOR)"
 	@$(DOCKER) run --rm=true \
 		-v `pwd`:/source/ \
 		-it --name resume-epub jagregory/pandoc \
-		-f markdown -t epub --epub-cover-image generate.png -o /source/$(SOURCE)-$(LANG).epub /source/$(SOURCE)-$(LANG).md
+		-f markdown -t epub --epub-cover-image generate.png -o /source/$(SOURCE)-$(COUNTRY).epub /source/$(SOURCE)-$(COUNTRY).md
 
 .PHONY: docx
-docx: guard-LANG ## Make the Docx version (lang=xx)
-	@echo -e "$(OK_COLOR)[$(APP)] Build Docx resume : $(LANG)$(NO_COLOR)"
+docx: guard-COUNTRY ## Make the Docx version (COUNTRY=xx)
+	@echo -e "$(OK_COLOR)[$(APP)] Build Docx resume : $(COUNTRY)$(NO_COLOR)"
 	@$(DOCKER) run --rm=true \
 		-v `pwd`:/source/ \
 		-it --name resume-docx jagregory/pandoc \
-		-f markdown -t docx --reference-docx="reference.docx" -o /source/$(SOURCE)-$(LANG).docx /source/$(SOURCE)-$(LANG).md
+		-f markdown -t docx --reference-docx="reference.docx" -o /source/$(SOURCE)-$(COUNTRY).docx /source/$(SOURCE)-$(COUNTRY).md
 
 .PHONY: pdf
-pdf: guard-LANG html ## Make the PDF version (lang=xx)
-	@echo -e "$(OK_COLOR)[$(APP)] Build PDF resume : $(LANG)$(NO_COLOR)"
+pdf: guard-COUNTRY html ## Make the PDF version (COUNTRY=xx)
+	@echo -e "$(OK_COLOR)[$(APP)] Build PDF resume : $(COUNTRY)$(NO_COLOR)"
 	@$(DOCKER) run --rm \
 		-v `pwd`:/converted/ \
 		--name resume-pdf $(PDF_IMAGE) \
-		athenapdf resume-$(LANG).html resume-$(LANG).pdf
+		athenapdf resume-$(COUNTRY).html resume-$(COUNTRY).pdf
 
 .PHONY: resume
-resume: guard-LANG ## Make resume (lang=xx)
-	@make html pdf lang=$(LANG) && \
-		mv resume-$(LANG).html resume-$(LANG)-$(DATE).html && \
-		mv resume-$(LANG).pdf resume-$(LANG)-$(DATE).pdf
+resume: guard-COUNTRY ## Make resume (COUNTRY=xx)
+	@make html pdf COUNTRY=$(COUNTRY) && \
+		mv resume-$(COUNTRY).html resume-$(COUNTRY)-$(DATE).html && \
+		mv resume-$(COUNTRY).pdf resume-$(COUNTRY)-$(DATE).pdf
 
 .PHONY: all
 all: clean ## Make resumes
-	@make resume lang=fr
-	@make resume lang=en
+	@make resume COUNTRY=fr
+	@make resume COUNTRY=en
