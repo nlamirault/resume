@@ -1,17 +1,25 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014-2022 Nicolas Lamirault
+rights: © Nicolas Lamirault
 ...
 
 ----
 
 [https://nicolas.lamirault.xyz](https://nicolas.lamirault.xyz)
 
-Expériences
---------------
+Professional Experiences
+---------------------------
 
-03/2019-.
+02/2022-Present
+:   *Swan*
+
+    - Design and operate our Cloud Platform, running on AWS using infrastructure-as-code (Terraform, Helm, ...) and Gitops (Argo projects: CD, Events and Workflows)
+    - Manage the Observability plateform for EKS: Prometheus, Grafana, Opentelemetry, Exporters, ...
+    - Maintain third-party softwares (Postgresql, Hashicorp Vault, ...)
+    - Participate to On-Call rotation
+
+03/2019-02/2022
 :   *Skale-5*
     Cloud Consultant / SRE
 
@@ -22,6 +30,7 @@ Expériences
     - Manage GCP and AWS platforms using Terraform, Ansible, Packer, ...
     - Project templates with Cookiecutter
     - Infrastructure tests using Inspec
+    - DevOps practices: SRE, on-call, incident-management, hands-on documentation, and many more;
 
 10/2016-03/2019
 :   *DevOps Tools, Orange Application for Business*
@@ -120,8 +129,8 @@ Certifications
 :   *Certified Kubernetes Administrator*
     [CKA](https://www.youracclaim.com/badges/f6acd9c5-89b7-43e9-928c-dbaa9dcd9e9c/public_url)
 
-Comptétences
----------------
+Technical Expertise
+--------------------
 
 Cloud
 :   *Provider*
@@ -129,6 +138,12 @@ Cloud
 
 :   *Containers*
     Kubernetes, Nomad, Docker
+
+:   *Tools*
+    Terraform, Packer, Ansible, Puppet, ...
+
+:   *Orchestrator*
+    CloudStack, Openstack
 
 Programming languages
 :   *Current use (personal, professional)*
@@ -155,32 +170,23 @@ Methodologies & Practices
     TDD, eXtreme Programming, Design patterns
 
 Tools
-:   *Container*
-    Kubernetes, Docker, Nomad, 
-
-:   *Orchestrators*
-    Cloudstack, Openstack
-
-:   *Cloud*
-    Terraform, Packer, Ansible, Vagrant, Puppet, Salt Stack
+:   *Gitops*
+    Argo (CD, Rollouts, Workflow, Events), Flux v2
 
 :   *Observability*
     Prometheus, Thanos, Mimir, AlertManager, Grafana, Loki, Tempo, Jaeger, EFK
 
-:   *ChaosEngineering*
-    LitmusChaos, ChaosMesh
-
-:   *Gitops*
-    Argo (Cd, Rollouts, Workflow, Events), Flux v2
+:   *CI/CD*
+    Github Actions, GitlabCI, Tekton, Jenkins-X
 
 :   *ServiceMesh*
     Istio, OpenServiceMesh
 
-:   *Databases*
-    MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
+:   *ChaosEngineering*
+    Litmus Chaos, Chaos Mesh
 
-:   *CI/CD*
-    Github Actions, GitlabCI, Tekton, Jenkins-X,
+:   *Database*
+    MySQL, PostgreSQL, NoSQL (CouchDB, MongoDB)
 
 Languages
 ---------
@@ -198,14 +204,17 @@ Open source
 ----------------
 
 Cloud
-:   *[portefaix](https://github.com/portefaix)* -
-    Building an infrastructure on public cloud providers and deploying Cloud Native applications in a Kubernetes cluster
+:   *[portefaix-kubernetes](https://github.com/portefaix-kubernetes)* -
+    Gitops for Kubernetes.
+
+:   *[portefaix-infrastructure](https://github.com/portefaix-infrastructure)* -
+    Infrastructure As Code using Terraform (AWS, GCP, AZure, ...).
 
 :   *[portefaix-hub](https://github.com/portefaix-hub)* -
     Charts Helm for the Portefaix project deployed on [Artifactory Hub](https://artifacthub.io/packages/search?page=1&repo=portefaix-hub)
 
 :   *[portefaix-policies](https://github.com/portefaix-policies)* -
-    [Open Policy Agent](https://www.openpolicyagent.org/) and [Kyverno](https://kyverno.io/) rules for the Portefaix project
+    [Open Policy Agent](https://www.openpolicyagent.org/), [Kyverno](https://kyverno.io/) and [Kubewarden](https://www.kubewarden.io/) rules for the Portefaix project
 
 :   *[portefaix-inspec-gcp](https://github.com/portefaix/portefaix-inspec-gcp)*, *[portefaix-inspec-aws](https://github.com/portefaix/portefaix-inspec -aws)*, *[portefaix-inspec-azure](https://github.com/portefaix/portefaix-inspec-azure)* -
     [Inspec](https://inspec.io) profiles for infrastructure tests
@@ -216,30 +225,15 @@ Cloud
 :   *[monitoring-mixins](https://github.com/nlamirault/monitoring-mixins)* -
     Collection of reusable and configurable Prometheus alerts, and Grafana dashboards.
 
-:   *[bento](https://github.com/nlamirault/bento)* -
-    Some Vagrant baseboxes made using Packer (Archlinux, Debian, CentOS,
-    FreeBSD, OpenBSD, NetBSD)
-
-:   *[ploio](https://github.com/ploio)* -
-    Setup your own Kubernetes, Swarm, Nomad, Rancher or Openshift Origin cluster
-    using Terraform and Packer and deploy it on public Cloud provider (AWS,
-    Google Compute Engine, Digital Ocean, ...)
-
-:   *[zeiot](https://github.com/zeiot)* -
-    Docker images for ARM v7/v8: Prometheus, Domoticz, CoreDNS, Prometheus exporters, Grafana, Nats, ...)
-
-:   *[helmsman](https://github.com/nlamirault/helmsman)*
-    Text User Interface for Kubernetes
-
-Automating
+Devops
 :   *[divona](https://github.com/nlamirault/divona)* -
-    A Linux station or virtual machine configuration tool based on Ansible. Compatible with Archlinux, Debian, CentOS, FreeBSD, NetBSD, OpenBSD and OSX
+    Automated configuration of a personal environment using [Ansible](https://www.ansible.com/) collections: [Linux](https://github.com/divona-roles/ansible-collection-linux), [OSX](https://github.com/divona-roles/ansible-collection-mac) and [Windows](https://github.com/divona-roles/ansible-collection-windows)
 
 :   *[galactus](https://github.com/nlamirault/galactus)* -
-    Terraformization of projects (Github, Gitlab, ...)
+    Terraforming for uniformization
 
 :   *[scame](https://github.com/nlamirault/scame)* -
-    A turnkey configuration of Emacs
+    Emacs personal configuration
 
 :   *[miv](https://github.com/nlamirault/miv)* -
     A personal configuration for Neovim
