@@ -1,7 +1,7 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
 ---
-rights: © 2014-2021 Nicolas Lamirault
+rights: © Nicolas Lamirault
 ...
 
 ----
@@ -11,7 +11,15 @@ rights: © 2014-2021 Nicolas Lamirault
 Expériences
 --------------
 
-03/2019-.
+02/2022-Actuellement
+:   *Swan*
+
+    - Concevoir et exploiter la plateforme cloud, fonctionnant sur AWS en utilisant l'infrastructure-as-code (Terraform, Helm, ...) et un mode Gitops (projets Argo : CD, Events et Workflows).
+    - Observabilité de notre plateforme sur EKS : Prometheus, Grafana, Opentelemetry, Exporters, ...
+    - Maintenir les logiciels tiers (Postgresql, Hashicorp Vault, ...)
+    - Participer à la rotation de l'astreinte
+
+03/2019-02/2022
 :   *Skale-5*
     Consultant Cloud / SRE
 
@@ -130,6 +138,12 @@ Cloud
 :   *Containers*
     Kubernetes, Nomad, Docker
 
+:   *Tools*
+    Terraform, Packer, Ansible, Puppet, ...
+
+:   *Orchestrator*
+    CloudStack, Openstack
+
 Programming languages
 :   *Current use (personal, professional)*
     Go, Python, Common Lisp,
@@ -155,32 +169,23 @@ Methodologies & Practices
     TDD, eXtreme Programming, Design patterns
 
 Tools
-:   *Container*
-    Kubernetes, Docker, Nomad, 
-
-:   *Orchestrators*
-    Cloudstack, Openstack
-
-:   *Cloud*
-    Terraform, Packer, Ansible, Vagrant, Puppet, Salt Stack
+:   *Gitops*
+    Argo (CD, Rollouts, Workflow, Events), Flux v2
 
 :   *Observability*
     Prometheus, Thanos, Mimir, AlertManager, Grafana, Loki, Tempo, Jaeger, EFK
 
-:   *ChaosEngineering*
-    LitmusChaos, ChaosMesh
-
-:   *Gitops*
-    Argo (Cd, Rollouts, Workflow, Events), Flux v2
+:   *CI/CD*
+    Github Actions, GitlabCI, Tekton, Jenkins-X
 
 :   *ServiceMesh*
     Istio, OpenServiceMesh
 
-:   *Databases*
-    MySQL, PostgreSQL, Timeseries (InfluxDB), NewSQL (CockroachDB)
+:   *ChaosEngineering*
+    Litmus Chaos, Chaos Mesh
 
-:   *CI/CD*
-    Github Actions, GitlabCI, Tekton, Jenkins-X,
+:   *Database*
+    MySQL, PostgreSQL, NoSQL (CouchDB, MongoDB)
 
 Langues
 ---------
@@ -198,14 +203,17 @@ Open source
 ----------------
 
 Cloud
-:   *[portefaix](https://github.com/portefaix)* -
-    Création d'une infrastructure sur les fournisseurs de Cloud public et déploiement d'applications Cloud Native dans un cluster Kubernetes
+:   *[portefaix-kubernetes](https://github.com/portefaix-kubernetes)* -
+    Déploiement d'applications Cloud Native dans un cluster Kubernetes en mode Gitops
+
+:   *[portefaix-infrastructure](https://github.com/portefaix-infrastructure)* -
+    Création d'une infrastructure sur les fournisseurs de Cloud public
 
 :   *[portefaix-hub](https://github.com/portefaix-hub)* -
     Charts Helm pour le projet Portefaix déployé sur [Artifactory Hub](https://artifacthub.io/packages/search?page=1&repo=portefaix-hub)
 
 :   *[portefaix-policies](https://github.com/portefaix-policies)* -
-    Règles [Open Policy Agent](https://www.openpolicyagent.org/) et [Kyverno](https://kyverno.io/) pour le projet Portefaix
+    Règles [Open Policy Agent](https://www.openpolicyagent.org/), [Kyverno](https://kyverno.io/) et [Kubewarden](https://www.kubewarden.io/) pour le projet Portefaix
 
 :   *[portefaix-inspec-gcp](https://github.com/portefaix/portefaix-inspec-gcp)*, *[portefaix-inspec-aws](https://github.com/portefaix/portefaix-inspec-aws)*, *[portefaix-inspec-azure](https://github.com/portefaix/portefaix-inspec-azure)* -
     Profiles [Inspec](https://inspec.io) pour des tests d'infrastructures
@@ -216,20 +224,9 @@ Cloud
 :   *[monitoring-mixins](https://github.com/nlamirault/monitoring-mixins)* -
     Collection of reusable and configurable Prometheus alerts, and Grafana dashboards.
 
-:   *[bento](https://github.com/nlamirault/bento)* -
-    Définition de box Vagrant utilisant Packer (Arch, Debian, CentOS, FreeBSD,
-    OpenBSD, NetBSD)
-
-:   *[ploio](https://github.com/ploio)* -
-    POC pour déployer Kubernetes, Rancher, Openshift, ... en utilisant Packer et
-    Terraform sur les différents Cloud publics
-
-:   *[zeiot](https://github.com/zeiot)* -
-    Images Docker pour ARM v7/v8: Prometheus, Domoticz, CoreDNS, Prometheus exporters, Grafana, Nats, ...)
-
 Automatisation
 :   *[divona](https://github.com/nlamirault/divona)* -
-    Un outil de configuration de poste Linux ou de machine virtuelle basé sur Ansible. Compatible Archlinux, Debian, CentOS,FreeBSD, NetBSD, OpenBSD et OSX
+    Configuration automatisée du poste de travail par les collections [Ansible](https://www.ansible.com/) collections: [Linux](https://github.com/divona-roles/ansible-collection-linux), [OSX](https://github.com/divona-roles/ansible-collection-mac) et [Windows](https://github.com/divona-roles/ansible-collection-windows)
 
 :   *[galactus](https://github.com/nlamirault/galactus)* -
     Terraformisation des projets (Github, Gitlab, ...)
