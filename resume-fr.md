@@ -1,10 +1,14 @@
 ![](me.jpg) Nicolas Lamirault
 ===========================================
+
 ---
+title: ""
+output:
+  html_document:
+    toc: yes
 rights: © Nicolas Lamirault
 ...
-
-----
+---
 
 [https://nicolas.lamirault.xyz](https://nicolas.lamirault.xyz)
 

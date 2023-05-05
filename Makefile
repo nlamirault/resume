@@ -29,6 +29,8 @@ HTML_IMAGE = nlamirault/resume:$(VERSION)
 EPUB_IMAGE = nlamirault/resume:$(VERSION)
 PDF_IMAGE = arachnysdocker/athenapdf:2.16.0
 
+PANDOC_IMAGE = oehrlis/pandoc:2.1.1
+
 STYLE=style.css
 SOURCE=resume
 
@@ -82,7 +84,7 @@ html: guard-COUNTRY ## Make the HTML version (COUNTRY=xx)
 	@echo -e "$(OK_COLOR)[$(APP)] Build HTML resume: $(COUNTRY)$(NO_COLOR)"
 	@$(DOCKER) run --rm=true \
 		-v `pwd`:/source/ \
-		-it --name resume-html jagregory/pandoc \
+		-it --name resume-html $(PANDOC_IMAGE) \
 		--standalone --from markdown --to html -c $(STYLE) -o /source/$(SOURCE)-$(COUNTRY).html /source/$(SOURCE)-$(COUNTRY).md
 
 .PHONY: gotenberg
