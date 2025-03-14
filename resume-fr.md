@@ -111,7 +111,7 @@ Education
 
 1996
 :   *Baccalauréat Scientifique (mention bien)*
-    Lycée Elire Faure, Lormont
+    [Lycée Elire Faure, Lormont](https://www.lyc-eliefaure.fr/)
 
 Certifications
 ---------------

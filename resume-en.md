@@ -99,16 +99,16 @@ Education
 -------------
 
 1998-2000
-:    *Degree / Master of Computer*
-     [University of Bordeaux I, Talence](http://www.u-bordeaux1.fr)
+:   *Degree / Master of Computer*
+    [University of Bordeaux I, Talence](http://www.u-bordeaux1.fr)
 
 1996-1998
-:    *DEUG MASS*
-     [Victor Segalen Bordeaux II University, Bordeaux](http://www.univ-bordeauxsegalen.fr/)
+:   *DEUG MASS*
+    [Victor Segalen Bordeaux II University, Bordeaux](http://www.univ-bordeauxsegalen.fr/)
 
 1996
-:    *Bachelor of Science (honors)*
-     High School Elie Faure, Lormont
+:   *Bachelor of Science (honors)*
+    [High School Elie Faure, Lormont](https://www.lyc-eliefaure.fr/)
 
 Certifications
 ---------------

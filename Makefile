@@ -104,6 +104,7 @@ pdf: guard-COUNTRY html ## Make the PDF version (COUNTRY=xx)
 			--form files=@me.jpg \
 			-o resume-$(COUNTRY).pdf \
 		&& rm index.html
+
 .PHONY: resume
 resume: guard-COUNTRY ## Make resume (COUNTRY=xx)
 	@make html pdf COUNTRY=$(COUNTRY) && \
