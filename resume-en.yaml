@@ -1,0 +1,324 @@
+cv:
+  name: Nicolas Lamirault
+  location: Bordeaux, France
+  email: nicolas.lamirault@gmail.com
+  phone:
+  website: https://nicolas.lamirault.xyz
+  social_networks:
+    - network: GitHub
+      username: nlamirault
+    - network: LinkedIn
+      username: nicolaslamirault
+  sections:
+    # About_me:
+
+    education:
+      - institution: Université de Bordeaux I
+        area: Computer Science
+        degree: Master of Computer
+        date: "2000"
+        location: Bordeaux, France
+        summary:
+        highlights:
+      - institution: Université de Bordeaux II
+        area: Computer Science
+        degree: DEUG MASS
+        date: "1998"
+        location: Bordeaux, France
+        summary:
+        highlights:
+
+    experience:
+      - company: "[Swan](https://swan.io)"
+        position: Staff Site Reliability Engineer
+        date:
+        start_date: 2024-02
+        end_date:
+        location: Bordeaux, France
+        # summary:
+
+      - company: "[Swan](https://swan.io)"
+        position: Site Reliability Engineer
+        date:
+        start_date: 2022-02
+        end_date: 2024-02
+        location: Bordeaux, France
+        summary:
+        highlights:
+          - Design and operate our Cloud Platform, running on AWS using Terraform and Terragrunt
+          - Manage our Gitops flow using Argo projects like CD, Events and Workflows
+          - Manage the Observability plateform with Prometheus, Grafana, Loki, and OpenTelemetry
+          - Maintain third-party softwares (Postgresql, Hashicorp Vault, ...)
+          - Participate to On-Call rotation
+
+      - company: Skale-5
+        position: Cloud Consultant / SRE
+        date:
+        start_date: 2019-03
+        end_date: 2022-02
+        location: Bordeaux, France
+        summary:
+        highlights:
+          - Harmonize and unify existing CI/CD processes
+          - Monitoring stack based on Kubernetes (GKE, EKS, AKS, ACK) using Prometheus Operator, Prometheus, Thanos, Exporters and Grafana.
+          - "Logging tools: ELK/EFK, Loki, Stackdriver"
+          - Bespoke configuration of Kustomize manifests used by Skale-5
+          - Manage GCP and AWS platforms using Terraform, Ansible, Packer, ...
+          - Project templates with Cookiecutter
+          - Infrastructure tests using Inspec
+          - "DevOps practices: SRE, on-call, incident-management, hands-on documentation, and many more"
+
+
+      - company: "DevOps Department, Orange Application for Business"
+        position: Senior Software Engineer
+        date:
+        start_date: 2016-10
+        end_date: 2019-03
+        location: Bordeaux, France
+        summary:
+        highlights:
+          - Collecting, centralizing, and visualizing client infrastructures from multiple Cloud Providers (Openstack, AWS, Azure) (Python/Golang/Kubernetes)
+          - Tools for deploying Cloud Native Applications (Kubernetes)
+          - API Gateway for internale services (Golang, gRPC)
+          - Continuous Integration and Deployment using GitlabCI and Kubernetes
+          - Setting metrics in Cloud services (Opentracing Python and Golang, Jaeger)
+          - Messaging between services using Nats.io (Golang)
+          - Prometheus exporters for REST and gRPC services
+          - Prometheus exporter for vSphere (Golang)
+          - Deployment on Kubernetes
+          - Containers monitoring (Golang)
+
+      - company: "Infrastructure and Production Tools, Orange Application for Business"
+        position: Senior Software Engineer
+        date:
+        start_date: 2014-07
+        end_date: 2016-10
+        location: Bordeaux, France
+        summary:
+        highlights:
+          - Virtual machine management tools (VMWare / CloudStack
+          - Administration Interface for the internal Cloud
+          - Redesigned Packaging, Integration and continuous tests (Golang / Docker)
+
+      - company: Cloud computing Department, Multimedia Business Services
+        position: Software Engineer
+        date:
+        start_date: 2012-07
+        end_date: 2014-07
+        location: Bordeaux, France
+        summary:
+        highlights:
+          - Implementation of continuous integration for the IAAS.
+          - Redesign of the software architecture of the IAAS (Apache CloudStack, Jersey, Flask, RabbitMQ, Python CLI, NodeJS, StatusDashboard)
+          - Packaging for the orchestrator of the CloudStack cloud Multimedia Business Services
+          - Setting up a development environment and build based on VirtualBox / Vagrant / Ansible
+
+      - company: NFC Department, Multimedia Business Services
+        position: Software Developer
+        date:
+        start_date: 2011-06
+        end_date: 2012-07
+        location: Bordeaux, France
+        summary:
+        highlights:
+          - NFC Access Control Service for Mobile NFC Service Center (UI administration, lifecycle AFSCM, cardlet, Android application)
+          - Development of SP TSM (Trusted Service Manager Service Provider), bank certification, PCI / DSS, Mastercard
+
+      - company: Multimedia Business Services
+        position: Software Developer
+        date:
+        start_date: 2001-10
+        end_date: 2011-06
+        location: Bordeaux, France
+        summary:
+        highlights:
+          - Application Development SMS / MMS on behalf of Orange companies media (television, radio, internet), large accounts
+          - Interactive Voice Servers Development in J2EE and VoiceXML.
+          - Development of web applications (web shop, intranet, tools of administration).
+          - Architecture client / servers (RESTful, SOAP, XML-RPC)
+          - Implementation of agile practices within the team (pair programming, Test Driven Design)
+
+      - company: Axialog
+        position: Software Developer
+        date:
+        start_date: 2001-01
+        end_date: 2001-10
+        location: Bordeaux, France
+        summary:
+        highlights:
+          - Corporate Quality Team Thales Avionics.
+          - Implementation of unit tests and integration battery
+          - Implementation of project management tools on Unix.
+
+    projects:
+      - name: '[portefaix](https://github.com/portefaix)'
+        summary: Cloud Native deployment platform
+        highlights:
+          - "[Infrastructure As Code](https://github.com/portefaix/portefaix-policies) using Terraform (AWS, GCP, AZure, Alicloud, Scaleway, ...)"
+          - "[Helm charts](https://github.com/portefaix/portefaix-hub) for the Portefaix project deployed on [Artifactory Hub](https://artifacthub.io/packages/search?page=1&repo=portefaix-hub)"
+          - "[Policies](https://github.com/portefaix/portefaix-policies) using [Cel](https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/), [Open Policy Agent](https://www.openpolicyagent.org/), [Kyverno](https://kyverno.io/), [Kubewarden](https://www.kubewarden.io/) rules"
+          - Build cloud platform using [Kubernetes Resources Model](https://github.com/portefaix/portefaix-krm)
+
+      - name: "[monitoring-mixins](https://github.com/nlamirault/monitoring-mixins)"
+        summary: Collection of reusable and configurable Prometheus alerts, and Grafana dashboards
+
+      - name: "[Terraform modules](https://registry.terraform.io/namespaces/nlamirault)"
+        summary: Terraform modules on several Cloud providers
+
+      - name: "[OpenTelemetry lab](https://github.com/nlamirault/opentelemetry-lab)"
+        summary: A laboratory for OpenTelemetry cloud native applications
+
+      - name: "[Divona](https://github.com/nlamirault/divona)"
+        summary: "Automated configuration of a personal environment using [Ansible](https://www.ansible.com/) collections for [Linux](https://github.com/divona-roles/ansible-collection-linux), [OSX](https://github.com/divona-roles/ansible-collection-mac) and [Windows](https://github.com/divona-roles/ansible-collection-windows)"
+
+
+    skills:
+      - label: Programming
+        details: Go, Python, Java, Rust
+      - label: Operations
+        details: AWS, GCP, Terraform, Packer, Ansible, Docker, Nomad, Consul, Vault, Prometheus, OpenTelemetry, CI/CD
+      - label: Operating Systems
+        details: "Daily: Linux (Arch, Debian, Ubuntu), OSX"
+
+design:
+  # theme: classic
+  theme: moderncv
+  page:
+    size: us-letter
+    top_margin: 2cm
+    bottom_margin: 2cm
+    left_margin: 2cm
+    right_margin: 2cm
+    show_page_numbering: true
+    show_last_updated_date: true
+  colors:
+    text: rgb(0, 0, 0)
+    name: rgb(0, 79, 144)
+    connections: rgb(0, 79, 144)
+    section_titles: rgb(0, 79, 144)
+    links: rgb(0, 79, 144)
+    last_updated_date_and_page_numbering: rgb(128, 128, 128)
+  text:
+    font_family: Source Sans 3
+    font_size: 10pt
+    leading: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+  links:
+    underline: false
+    use_external_link_icon: true
+  header:
+    name_font_family: Source Sans 3
+    name_font_size: 30pt
+    name_bold: true
+    photo_width: 3.5cm
+    vertical_space_between_name_and_connections: 0.7cm
+    vertical_space_between_connections_and_first_section: 0.7cm
+    horizontal_space_between_connections: 0.5cm
+    connections_font_family: Source Sans 3
+    separator_between_connections: ''
+    use_icons_for_connections: true
+    alignment: center
+  section_titles:
+    # type: with-parial-line
+    type: moderncv
+    font_family: Source Sans 3
+    font_size: 1.4em
+    bold: true
+    small_caps: false
+    line_thickness: 0.5pt
+    vertical_space_above: 0.5cm
+    vertical_space_below: 0.3cm
+  entries:
+    date_and_location_width: 4.15cm
+    left_and_right_margin: 0.2cm
+    horizontal_space_between_columns: 0.1cm
+    vertical_space_between_entries: 1.2em
+    allow_page_break_in_sections: true
+    allow_page_break_in_entries: true
+    short_second_row: false
+    show_time_spans_in: []
+  highlights:
+    bullet: •
+    top_margin: 0.25cm
+    left_margin: 0.4cm
+    vertical_space_between_highlights: 0.25cm
+    horizontal_space_between_bullet_and_highlight: 0.5em
+    summary_left_margin: 0cm
+  entry_types:
+    one_line_entry:
+      template: '**LABEL:** DETAILS'
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION**, DEGREE in AREA -- LOCATION'
+      degree_column_template:
+      degree_column_width: 1cm
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    normal_entry:
+      main_column_first_row_template: '**NAME** -- **LOCATION**'
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    experience_entry:
+      main_column_first_row_template: '**COMPANY**, POSITION -- LOCATION'
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: DATE
+    publication_entry:
+      main_column_first_row_template: '**TITLE**'
+      main_column_second_row_template: |-
+        AUTHORS
+        URL (JOURNAL)
+      main_column_second_row_without_journal_template: |-
+        AUTHORS
+        URL
+      main_column_second_row_without_url_template: |-
+        AUTHORS
+        JOURNAL
+      date_and_location_column_template: DATE
+locale:
+  language: en
+  phone_number_format: national
+  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  last_updated_date_template: Last updated in TODAY
+  date_template: MONTH_ABBREVIATION YEAR
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: –
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - June
+    - July
+    - Aug
+    - Sept
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+rendercv_settings:
+  date: '2025-03-12'
+  render_command:
+  bold_keywords: []
