@@ -20,9 +20,14 @@
 
 # Experience
 
+## [Swan](https://swan.io), Staff Site Reliability Engineer
+
+- Feb 2024 – present
+- Bordeaux, France
+
 ## [Swan](https://swan.io), Site Reliability Engineer
 
-- Feb 2022 – present
+- Feb 2022 – Feb 2024
 - Bordeaux, France
 - Design and operate our Cloud Platform, running on AWS using Terraform and Terragrunt
 - Manage our Gitops flow using Argo projects like CD, Events and Workflows
