@@ -4,9 +4,9 @@ cv:
   email: nicolas.lamirault@gmail.com
   phone:
   website: https://nicolas.lamirault.xyz
-  # social_networks:
-  #   - network: GitHub
-  #     username: nlamirault
+  social_networks:
+    - network: GitHub
+      username: nlamirault
   sections:
     # About_me:
 

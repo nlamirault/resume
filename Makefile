@@ -77,7 +77,7 @@ resume-en.pdf: resume-en.yaml venv
 .PHONY: init
 init: ## Initialize environment
 	uv venv
-	uv pip install
+	uv pip install -r pyproject.toml
 
 .PHONY: clean
 clean:
@@ -85,4 +85,5 @@ clean:
 
 .PHONY: resume
 resume: ## Build resume
-	uv run rendercv render resume-en.yaml
+	uv run rendercv render resume-en.yaml -o .
+	# cp rendercv_output/Nicolas_Lamirault_CV.* .
