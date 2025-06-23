@@ -1,0 +1,24 @@
+name: Build
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Uv
+      uses: astral-sh/setup-uv@v6
+
+    - name: Install dependencies
+      run: make init
+
+    - name: Build resume
+      run: make resume
