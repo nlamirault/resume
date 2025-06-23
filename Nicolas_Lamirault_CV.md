@@ -4,6 +4,7 @@
 - Location: Bordeaux, France
 - Website: [nicolas.lamirault.xyz](https://nicolas.lamirault.xyz/)
 - GitHub: [nlamirault](https://github.com/nlamirault)
+- LinkedIn: [nicolaslamirault](https://linkedin.com/in/nicolaslamirault)
 
 
 # Education
