@@ -85,5 +85,7 @@ clean:
 
 .PHONY: resume
 resume: ## Build resume
-	uv run rendercv render resume-en.yaml -o .
-	# cp rendercv_output/Nicolas_Lamirault_CV.* .
+	uv run rendercv render resume-en.yaml \
+		--pdf-path Nicolas_Lamirault_CV.pdf \
+		--html-path Nicolas_Lamirault_CV.html \
+		--markdown-path Nicolas_Lamirault_CV.md
